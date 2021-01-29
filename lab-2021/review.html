@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style> /*taken from https://www.w3docs.com/snippets/css/how-to-vertically-align-text-next-to-an-image.html*/
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      ul {
+        list-style-type: square;
+      }
+      h3 {
+        font-family: arial, Helvetica, sans-serif;
+      }
+      li {
+        background: pink;
+      }
+      li:nth-child(odd) {
+        background: yellow;
+      } /* from https://stackoverflow.com/questions/358350/alternate-background-colors-for-list-items */
+      a {
+        color: red;
+        text-decoration: none;
+      }
+      a:hover {
+        color: blue;
+      }
+      body {
+        background-color: rgba(255, 127, 130, .4);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Asley's Homepage</h1>
+
+    <h3>What I Use to Take Notes</h3>
+    <ul>
+      <li>Google Docs</li>
+      <li>College-Ruled Notebook</li>
+      <li>Notes App</li>
+    </ul>
+
+    <h3>Where I Archive Digital Photos</h3>
+    <div class="container">
+      <div class="image">
+        <img src="backupdisk.jpg" width="200px" alt="Backup Disk">
+      </div>
+      <div class="text">
+        <blockquote>This is my backup drive. I store digital photos as well as old class folders from my previous semesters in college.</blockquote>
+      </div>
+    </div>
+
+    <h3>How I Organize Digitally</h3>
+    <select name="digitalorganization" id="digitalorganization">
+      <option value="option1">Desktop Folders</option>
+      <option value="option2">Google Drive</option>
+      <option value="option3">Calendar App</option>
+      <option value="option4">Reminders App</option>
+      <option value="option5">Notes App</option>
+    </select>
+
+    <h3>How I Organize Physically</h3>
+    <select name="physicalorganization" id="physicalorganization">
+      <option value="option1">Sketchbook</option>
+      <option value="option2">Journal</option>
+      <option value="option3">Notebook</option>
+      <option value="option4">Dishes, Jars, and Bins</option>
+      <option value="option5">Drawers</option>
+      <option value="option6">Shelves</option>
+    </select>
+
+    <h3>External Servies I Use to Stay Organized</h3>
+    <ul>
+      <li><a href="https://drive.google.com/drive/u/0/my-drive">Google Drive</a></li>
+      <li><a href="https://www.dropbox.com/h">Dropbox</a></li>
+      <li><a href="https://portfolio.adobe.com/">Adobe Portfolio</a></li>
+    </ul>
+  </body>
+</html>
