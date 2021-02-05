@@ -1,0 +1,47 @@
+body {
+  margin: 100px;
+}
+
+h1 {
+  font-family: Brush Script MT, cursive;
+  color: #008080;
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 {
+  font-family: Garamond, serif;
+  color: #964B00;
+  font-size: 30px;
+}
+
+li {
+  font-family: Helvetica, sans-serif
+}
+
+p {
+  font-family: Georgia, serif
+}
+
+#banner {
+  float: right;
+  padding-left: 30px;
+}
+
+#profile {
+  float: left;
+  padding: 20px;
+}
+
+#bio {
+  color: #FF2D77;
+  font-size: 20px;
+}
+
+#description {
+  font-size: 20px;
+}
+
+.list {
+  font-size: 25px;
+}
