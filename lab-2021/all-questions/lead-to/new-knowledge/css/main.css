@@ -1,0 +1,65 @@
+body {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  background-color: #bae3cc;
+}
+
+#div1 {
+  background-color: #d6e890;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-top: 1px;
+}
+
+h2 {
+  text-align: center;
+  font-family: cara-condensed, sans-serif;
+  margin-top: -40px;
+  margin-bottom: 10px;
+}
+
+ul {
+  font-family: flex, sans-serif;
+}
+
+@font-face {
+  font-family: cara;
+  src: url(fonts/GelosaCara.otf);
+}
+
+@font-face {
+  font-family: flex;
+  src: url(fonts/RFlexRegularItalic-qZo1r.ttf);
+}
+
+@font-face {
+  font-family: cara-condensed;
+  src: url(fonts/GelosaCara-RegularCondensed.otf);
+}
+
+.page-title {
+  text-align: center;
+  font-family: cara, sans-serif;
+  font-size: 90px;
+  color: #ff4a3d;
+  letter-spacing: 15px;
+}
+
+.my-community-agreement{
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+
+.community-agreements {
+  font-size: 18px;
+  color: #bae3cc;
+  background-color: #1a6135;
+  letter-spacing: 0.5px;
+}
+
+a {
+  color: #bae3cc;
+}
