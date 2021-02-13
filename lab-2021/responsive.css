@@ -1,0 +1,136 @@
+body {
+  font-family: monaco;
+
+  /* 16 = 1em
+  If you want your pixel size to be close to 20px, you would divide 20/16 = 1.25em */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+      color: mediumpurple;
+      font-size: 50px;
+      font-family: monospace;
+  }
+  h2 {
+    color: lightblue;
+    font-size: 20px;
+    font-style: italic;
+  }
+  p {
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  body {
+      background-color: black;
+      padding: 25px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  h1 {
+      color: pink;
+      font-size: 45px;
+      text-align: center;
+      font-family: serif;
+  }
+  h2 {
+    color: yellow;
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+  }
+  p {
+    color: white;
+    font-size: 25px;
+    line-height: 40px;
+  }
+  body {
+      background-color: darkblue;
+      padding: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+      color: lightblue;
+      font-size: 65px;
+      text-align: center;
+      font-family: cursive;
+      margin-top: -50px;
+  }
+  h2 {
+    color: pink;
+    font-size: 35px;
+    font-style: italic;
+    text-align: left;
+  }
+  p {
+    color: white;
+    font-size: 35px;
+    line-height: 60px;
+  }
+  body {
+      background-color: purple;
+      padding: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+      color: red;
+      font-size: 100px;
+      text-align: left;
+      font-family: sans-serif;
+      margin-top: -100px;
+  }
+  h2 {
+    color: red;
+    font-size: 50px;
+    font-style: italic;
+    font-family: sans-serif;
+    text-align: left;
+  }
+  p {
+    color: black;
+    font-size: 50px;
+    line-height: 80px;
+    font-family: sans-serif;
+  }
+  body {
+      background-color: pink;
+      padding: 150px;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  h1 {
+      color: blue;
+      font-size: 110px;
+      text-align: center;
+      font-family: fantasy;
+      margin-top: -100px;
+  }
+  h2 {
+    color: blue;
+    font-size: 55px;
+    font-style: italic;
+    font-family: fantasy;
+    text-align: center;
+  }
+  p {
+    color: blue;
+    font-size: 55px;
+    line-height: 90px;
+    font-family: sans-serif;
+  }
+  body {
+      background-color: white;
+      padding: 200px;
+  }
+}
