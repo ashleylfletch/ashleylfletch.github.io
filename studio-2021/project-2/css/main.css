@@ -1,0 +1,82 @@
+body {
+  font-family: monaco;
+  background-color: black;
+}
+
+p {
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+.color {
+  color: violet;
+}
+
+a:link {
+  color: violet;
+  text-decoration: none;
+}
+
+a:visited {
+  color: violet;
+}
+
+a:hover {
+  color: pink;
+}
+
+.count {
+  color: violet
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 14px;
+    color: white;
+    font-style: italic;
+    text-align: center;
+  }
+  p {
+    font-size: 18px;
+    line-height: 40px;
+  }
+  .title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contents {
+    font-size: 30px;
+    line-height: 75px;
+  }
+  body {
+    padding: 25px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  h2 {
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+  }
+  p {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .title {
+    width: 300px;
+  }
+  body {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 10px;
+  }
+}

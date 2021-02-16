@@ -104,7 +104,7 @@ body {
   }
   body {
       background-color: pink;
-      padding: 150px;
+      padding: 1px;
   }
 }
 
@@ -131,6 +131,6 @@ body {
   }
   body {
       background-color: white;
-      padding: 200px;
+      padding: 300px;
   }
 }
