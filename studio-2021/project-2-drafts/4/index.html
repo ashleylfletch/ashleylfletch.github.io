@@ -7,40 +7,104 @@
     <title>Responsive Web Page</title>
   </head>
 <body>
-  <center><img src="the-library-of-babel.gif" id="home"></center>
-  <center><h2>By Jorge Luis Borges</h2></center>
-  <br><br>
-
-  <div id="contents">
+  <div id="space">
     <a href="pages/space.html">space</a>
+  </div>
+  <div id="period">
     <a href="pages/period.html">.</a>
+  </div>
+  <div id="comma">
     <a href="pages/comma.html">,</a>
+  </div>
+  <div id="a">
     <a href="pages/a.html">a</a>
+  </div>
+  <div id="b">
     <a href="pages/b.html">b</a>
+  </div>
+  <div id="c">
     <a href="pages/c.html">c</a>
+  </div>
+  <div id="d">
     <a href="pages/d.html">d</a>
+  </div>
+  <div id="e">
     <a href="pages/e.html">e</a>
+  </div>
+  <div id="e">
     <a href="pages/f.html">f</a>
+  </div>
+  <div id="e">
     <a href="pages/g.html">g</a>
+  </div>
+  <div id="e">
     <a href="pages/h.html">h</a>
+  </div>
+  <div id="e">
     <a href="pages/i.html">i</a>
+  </div>
+  <div id="e">
     <a href="pages/j.html">j</a>
+  </div>
+  <div id="e">
     <a href="pages/k.html">k</a>
+  </div>
+  <div id="e">
     <a href="pages/l.html">l</a>
+  </div>
+  <div id="e">
     <a href="pages/m.html">m</a>
+  </div>
+  <div id="e">
     <a href="pages/n.html">n</a>
+  </div>
+  <div id="e">
     <a href="pages/o.html">o</a>
+  </div>
+  <div id="e">
     <a href="pages/p.html">p</a>
+  </div>
+  <div id="e">
     <a href="pages/q.html">q</a>
+  </div>
+  <div id="e">
     <a href="pages/r.html">r</a>
+  </div>
+  <div id="e">
     <a href="pages/s.html">s</a>
+  </div>
+  <div id="e">
     <a href="pages/t.html">t</a>
+  </div>
+  <div id="e">
     <a href="pages/u.html">u</a>
+  </div>
+  <div id="e">
     <a href="pages/v.html">v</a>
+  </div>
+  <div id="e">
     <a href="pages/w.html">w</a>
+  </div>
+  <div id="e">
     <a href="pages/x.html">x</a>
+  </div>
+  <div id="e">
     <a href="pages/y.html">y</a>
+  </div>
+  <div id="e">
     <a href="pages/z.html">z</a>
   </div>
+
+<script>
+const getRandom = (min, max) => Math.floor(Math.random()*(max-min+1)+min);
+
+const space= document.querySelector('#space');
+setInterval(() => {
+   space.style.left= getRandom(0, 100)+'%'; // 👈🏼 Horizontally
+   space.style.top = getRandom(0, 600 - 200)+'px'; // 👈🏼 Vertically
+
+}, 1000);
+</script>
+
 </body>
 </html>

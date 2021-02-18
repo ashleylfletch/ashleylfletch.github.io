@@ -1,0 +1,17 @@
+body {
+  font-family: monaco;
+  background-color: black;
+}
+
+p, h1, a {
+  color: white;
+  text-decoration: none;
+}
+
+.color, .page-header, h2 {
+  color: yellow;
+}
+
+#space, #period {
+  position: relative;
+}

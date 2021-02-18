@@ -54,11 +54,14 @@ p, h1, a {
     width: 250px;
   }
   p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 50px;
     color: white;
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .page-header {
+    margin-left: 5%;
   }
   #contents {
     font-size: 50px;
@@ -68,5 +71,10 @@ p, h1, a {
   }
   body {
     padding-top: 10px;
+  }
+  #target {
+    column-count: 2;
+    column-gap: 5%;
+    column-width: 37.5%;
   }
 }

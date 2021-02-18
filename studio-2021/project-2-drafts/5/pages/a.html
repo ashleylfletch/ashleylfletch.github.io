@@ -4,14 +4,80 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/main.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+$(function() {
+$("#library").click(function() {
+$('#hexagon').toggleClass("show");
+});
+});
+$(function() {
+$("#hexagon").click(function() {
+$('#book-shelf').toggleClass("show");
+});
+});
+$(function() {
+$("#book-shelf").click(function() {
+$('#book').toggleClass("show");
+});
+});
+$(function() {
+$("#book").click(function() {
+$('#symbol').toggleClass("show");
+});
+});
+$(function() {
+$("#symbol").click(function() {
+$('#symbol-list').toggleClass("show");
+});
+});
+$(function() {
+$("#a").click(function() {
+$('#text-a').toggleClass("show");
+});
+});
+    </script>
     <title>Responsive Web Page</title>
   </head>
 <body>
-  <a href="../index.html" class="page-header">Home</a><br>
-  <span class="page-header">Symbol Count: 212</span>
-  <br><br>
-
-  <p>
+  <a href="../index.html" class="page-header">Leave</a>
+  <p id="library">Library</p>
+  <p id="hexagon" class="hide" style="margin-left:20px;">Hexagon</p>
+  <p id="book-shelf" class="hide" style="margin-left:40px;">Book Shelf</p>
+  <p id="book" class="hide" style="margin-left:60px;">Book</p>
+  <p id="symbol" class="hide" style="margin-left:80px;">Symbol</p>
+  <p id="symbol-list" class="hide" style="margin-left:100px;">
+    <a href="pages/space.html">space</a>
+    <a href="pages/period.html">.</a>
+    <a href="pages/comma.html">,</a>
+    <span id="a">a</span>
+    <a href="pages/b.html">b</a>
+    <a href="pages/c.html">c</a>
+    <a href="pages/d.html">d</a>
+    <a href="pages/e.html">e</a>
+    <a href="pages/f.html">f</a>
+    <a href="pages/g.html">g</a>
+    <a href="pages/h.html">h</a>
+    <a href="pages/i.html">i</a>
+    <a href="pages/j.html">j</a>
+    <a href="pages/k.html">k</a>
+    <a href="pages/l.html">l</a>
+    <a href="pages/m.html">m</a>
+    <a href="pages/n.html">n</a>
+    <a href="pages/o.html">o</a>
+    <a href="pages/p.html">p</a>
+    <a href="pages/q.html">q</a>
+    <a href="pages/r.html">r</a>
+    <a href="pages/s.html">s</a>
+    <a href="pages/t.html">t</a>
+    <a href="pages/u.html">u</a>
+    <a href="pages/v.html">v</a>
+    <a href="pages/w.html">w</a>
+    <a href="pages/x.html">x</a>
+    <a href="pages/y.html">y</a>
+    <a href="pages/z.html">z</a>
+  </p>
+  <p id="text-a" class="hide" style="margin-left:120px;">
     By this <span class="color">a</span>rt you m<span class="color">a</span>y contempl<span class="color">a</span>te the v<span class="color">a</span>ri<span class="color">a</span>tions of the 23 letters...
     The <span class="color">a</span>n<span class="color">a</span>tomy of Mel<span class="color">a</span>ncholy, p<span class="color">a</span>rt 2, sect. II, mem. IV
     <br><br>

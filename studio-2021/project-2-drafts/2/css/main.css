@@ -8,8 +8,25 @@ p, h1, a {
   text-decoration: none;
 }
 
-.color, .page-header, h2 {
+.page-header, h2 {
   color: yellow;
+}
+
+.color {
+  color: yellow;
+  animation: fade 2s linear infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 480px) {
