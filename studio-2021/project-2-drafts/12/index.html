@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <title>Project 2, Part 5, Draft 2</title>
+    <title>Project 2, Part 6, Draft 4</title>
   </head>
 <body>
 <center>
-  <img src="the-library-of-babel.gif" id="home">
+  <h1>THE LIBRARY OF BABEL</h1>
   <h2>By Jorge Luis Borges</h2>
   <h2>Web Design by Ashley Fletcher</h2>
   <br><br>
@@ -105,58 +105,59 @@
 </center>
 
 <script>
-$(document).ready(function(){
-  animateDiv('.space');
-  animateDiv('.period');
-  animateDiv('.comma');
-  animateDiv('.a');
-  animateDiv('.b');
-  animateDiv('.c');
-  animateDiv('.d');
-  animateDiv('.e');
-  animateDiv('.f');
-  animateDiv('.g');
-  animateDiv('.h');
-  animateDiv('.i');
-  animateDiv('.j');
-  animateDiv('.k');
-  animateDiv('.l');
-  animateDiv('.m');
-  animateDiv('.n');
-  animateDiv('.o');
-  animateDiv('.p');
-  animateDiv('.q');
-  animateDiv('.r');
-  animateDiv('.s');
-  animateDiv('.t');
-  animateDiv('.u');
-  animateDiv('.v');
-  animateDiv('.w');
-  animateDiv('.x');
-  animateDiv('.y');
-  animateDiv('.z');
-});
+var circles = document.querySelectorAll(".space, .period, .comma, .a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .k, .l, .m, .n, .o, .p, .q, .r, .s, .t, .u, .v, .w, .x, .y, .z");
 
-function makeNewPosition(){
-
-  // Get viewport dimensions (remove the dimension of the div)
-  var h = $(window).height() - 40;
-  var w = $(window).width() - 40;
-
-  var nh = Math.floor(Math.random() * h);
-  var nw = Math.floor(Math.random() * w);
-
-  return [nh,nw];
-
+for (var i = 0; i < 25; i++) {
+  var circle = circles[i];
+  animateCircles(circle);
 }
 
-function animateDiv(myclass){
-  var newq = makeNewPosition();
-  $(myclass).animate({ top: newq[0], left: newq[1] }, 20000,   function(){
-    animateDiv(myclass);
-  });
+function animateCircles(circle) {
+  var xMax = 500;
+  var yMax = 300;
 
-};
+  circle.keyframes = [{
+    opacity: 0,
+    transform: "translate3d(" + (Math.random() * xMax) + "px, " + (Math.random() * yMax) + "px, 0px)"
+  }, {
+    opacity: 1,
+    transform: "translate3d(" + (Math.random() * xMax) + "px, " + (Math.random() * yMax) + "px, 0px)"
+  }, {
+    opacity: 0,
+    transform: "translate3d(" + (Math.random() * xMax) + "px, " + (Math.random() * yMax) + "px, 0px)"
+  }];
+
+  circle.animProps = {
+    duration: 1000 + Math.random() * 3000,
+    easing: "ease-out",
+    iterations: Infinity
+  }
+
+  var animationPlayer = circle.animate(circle.keyframes, circle.animProps);
+}
+
+circle.keyframes = [{
+  opacity: 0,
+  transform: "translate3d(" + 90 * i + "px, 0px, 0px)"
+}, {
+  opacity: 1,
+  transform: "translate3d(" + 90 * i + "px, 200px, 0px)"
+}, {
+  opacity: 0,
+  transform: "translate3d(" + 90 * i + "px, 0px, 0px)"
+}];
+
+circle.animProps = {
+  duration: 1000 + 1000 * i,
+  easing: "ease-out",
+  iterations: Infinity
+}
+
+function addFinishHandler(anim, el) {
+  anim.addEventListener('finish', function(e) {
+    animateCircles(el);
+  }, false);
+}
 </script>
 
 </body>

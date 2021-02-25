@@ -1,0 +1,165 @@
+body {
+  font-family: monaco;
+  background-color: black;
+}
+
+.space, .period, .comma, .a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .k, .l, .m, .n, .o, .p, .q, .r, .s, .t, .u, .v,
+.w, .x, .y, .z {
+  display: "inline-block";
+  position: absolute;
+}
+
+p, h3, a, .variation1-1, .variation1-2, .variation1-3, .variation1-4, .variation1-5, .variation2, .variation3, #leave {
+  color: #00FF00;
+  text-decoration: none;
+}
+
+h2, h1 {
+  color: #FFFFFF;
+}
+
+.page-header {
+  color: #00FF00;
+  position: fixed;
+}
+
+.variation1-1 {
+  animation: variation1 60s infinite;
+}
+
+.variation1-2 {
+  animation: variation1 50s infinite;
+}
+
+.variation1-3 {
+  animation: variation1 40s infinite;
+}
+
+.variation1-4 {
+  animation: variation1 30s infinite;
+}
+
+.variation1-5 {
+  animation: variation1 20s infinite;
+}
+
+#variation2-whitetext {
+  animation: variation2 20s infinite;
+}
+
+.variation3 {
+  animation: variation3 10s infinite;
+}
+
+#leave {
+  animation: leave-disappear 40s infinite;
+}
+
+@keyframes leave-disappear {
+  0% {
+    color:
+  }
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes variation1 {
+  0% {
+    font-size: 16px;
+  }
+  50% {
+    font-size: 0px;
+  }
+  100% {
+    font-size: 16px;
+  }
+}
+
+@keyframes variation2 {
+  30% {
+    color: white;
+  }
+  50% {
+    color: black;
+  }
+  70% {
+    color: white;
+  }
+}
+
+@keyframes variation3 {
+  0% {
+    color: #00FF00
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    opacity: #00FF00;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+  }
+  #home {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 40px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #contents {
+    font-size: 18px;
+  }
+  body {
+    padding-top: 10px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 14px;
+    font-style: italic;
+    line-height: 10px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 40px;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .page-header {
+    font-size: 16px;
+    margin-left: 5%;
+  }
+  #contents {
+    font-size: 20px;
+  }
+  body {
+    padding-top: 5px;
+  }
+  #target {
+    column-count: 2;
+    column-gap: 5%;
+    column-width: 37.5%;
+    height: calc(100vh - 80px);
+  }
+}
