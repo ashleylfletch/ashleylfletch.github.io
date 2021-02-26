@@ -4,43 +4,161 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
-    <title>Responsive Web Page</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <title>The Library of Babel</title>
   </head>
 <body>
-  <center><img src="the-library-of-babel.gif" id="home"></center>
-  <center><h2>By Jorge Luis Borges</h2></center>
-  <br><br>
+<center>
+  <h1>THE LIBRARY OF BABEL</h1>
+  <h2>By Jorge Luis Borges</h2>
+  <h3>Web Design by Ashley Fletcher</h3>
 
-  <div id="contents">
-    <a href="pages/space.html">space</a>
-    <a href="pages/period.html">.</a>
-    <a href="pages/comma.html">,</a>
-    <a href="pages/a.html">a</a>
-    <a href="pages/b.html">b</a>
-    <a href="pages/c.html">c</a>
-    <a href="pages/d.html">d</a>
-    <a href="pages/e.html">e</a>
-    <a href="pages/f.html">f</a>
-    <a href="pages/g.html">g</a>
-    <a href="pages/h.html">h</a>
-    <a href="pages/i.html">i</a>
-    <a href="pages/j.html">j</a>
-    <a href="pages/k.html">k</a>
-    <a href="pages/l.html">l</a>
-    <a href="pages/m.html">m</a>
-    <a href="pages/n.html">n</a>
-    <a href="pages/o.html">o</a>
-    <a href="pages/p.html">p</a>
-    <a href="pages/q.html">q</a>
-    <a href="pages/r.html">r</a>
-    <a href="pages/s.html">s</a>
-    <a href="pages/t.html">t</a>
-    <a href="pages/u.html">u</a>
-    <a href="pages/v.html">v</a>
-    <a href="pages/w.html">w</a>
-    <a href="pages/x.html">x</a>
-    <a href="pages/y.html">y</a>
-    <a href="pages/z.html">z</a>
-  </div>
+    <div class="space">
+      <a class="contents" href="pages/space.html">space</a>
+    </div>
+    <div class="period">
+      <a class="contents" href="pages/period.html">.</a>
+    </div>
+    <div class="comma">
+      <a class="contents" href="pages/comma.html">,</a>
+    </div>
+    <div class="a">
+      <a class="contents" href="pages/a.html">a</a>
+    </div>
+    <div class="b">
+      <a class="contents" href="pages/b.html">b</a>
+    </div>
+    <div class="c">
+      <a class="contents" href="pages/c.html">c</a>
+    </div>
+    <div class="d">
+      <a class="contents" href="pages/d.html">d</a>
+    </div>
+    <div class="e">
+      <a class="contents" href="pages/e.html">e</a>
+    </div>
+    <div class="f">
+      <a class="contents" href="pages/f.html">f</a>
+    <div class="g">
+      <a class="contents" href="pages/g.html">g</a>
+    </div>
+    <div class="h">
+      <a class="contents" href="pages/h.html">h</a>
+    </div>
+    <div class="i">
+      <a class="contents" href="pages/i.html">i</a>
+    </div>
+    <div class="j">
+      <a class="contents" href="pages/j.html">j</a>
+    </div>
+    <div class="k">
+      <a class="contents" href="pages/k.html">k</a>
+    </div>
+    <div class="l">
+      <a class="contents" href="pages/l.html">l</a>
+    </div>
+    <div class="m">
+      <a class="contents" href="pages/m.html">m</a>
+    </div>
+    <div class="n">
+      <a class="contents" href="pages/n.html">n</a>
+    </div>
+    <div class="o">
+      <a class="contents" href="pages/o.html">o</a>
+    </div>
+    <div class="p">
+      <a class="contents" href="pages/p.html">p</a>
+    </div>
+    <div class="q">
+      <a class="contents" href="pages/q.html">q</a>
+    </div>
+    <div class="r">
+      <a class="contents" href="pages/r.html">r</a>
+    </div>
+    <div class="s">
+      <a class="contents" href="pages/s.html">s</a>
+    </div>
+    <div class="t">
+      <a class="contents" href="pages/t.html">t</a>
+    </div>
+    <div class="u">
+      <a class="contents" href="pages/u.html">u</a>
+    </div>
+    <div class="v">
+      <a class="contents" href="pages/v.html">v</a>
+    </div>
+    <div class="w">
+      <a class="contents" href="pages/w.html">w</a>
+    </div>
+    <div class="x">
+      <a class="contents" href="pages/x.html">x</a>
+    </div>
+    <div class="y">
+      <a class="contents" href="pages/y.html">y</a>
+    </div>
+    <div class="z">
+      <a class="contents" href="pages/z.html">z</a>
+    </div>
+</center>
+
+<script>
+$(document).ready(function(){
+  animateDiv('.space');
+  animateDiv('.period');
+  animateDiv('.comma');
+  animateDiv('.a');
+  animateDiv('.b');
+  animateDiv('.c');
+  animateDiv('.d');
+  animateDiv('.e');
+  animateDiv('.f');
+  animateDiv('.g');
+  animateDiv('.h');
+  animateDiv('.i');
+  animateDiv('.j');
+  animateDiv('.k');
+  animateDiv('.l');
+  animateDiv('.m');
+  animateDiv('.n');
+  animateDiv('.o');
+  animateDiv('.p');
+  animateDiv('.q');
+  animateDiv('.r');
+  animateDiv('.s');
+  animateDiv('.t');
+  animateDiv('.u');
+  animateDiv('.v');
+  animateDiv('.w');
+  animateDiv('.x');
+  animateDiv('.y');
+  animateDiv('.z');
+});
+
+function makeNewPosition(){
+
+  // Get viewport dimensions (remove the dimension of the div)
+  var h = $(window).height() - 50;
+  var w = $(window).width() - 50;
+
+  var nh = Math.floor(Math.random() * h);
+  var nw = Math.floor(Math.random() * w);
+
+  return [nh,nw];
+
+}
+
+function animateDiv(myclass){
+  var newq = makeNewPosition();
+  $(myclass).hide();
+  $(myclass).css("top", newq[0], "left", newq[1]); //random start position
+  $(myclass).show();
+  $(myclass).animate({ top: newq[0], left: newq[1] }, 20000, function(){
+    animateDiv(myclass);
+  });
+
+};
+
+</script>
+
 </body>
 </html>
