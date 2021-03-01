@@ -1,8 +1,9 @@
 body {
-  font-family: monaco, monospace, sans-serif;
+  font-family: "Lucida Console", Monaco, monospace;
   background-color: black;
 }
 
+/*
 @font-face {
   font-family: monaco;
   src: url("monaco.ttf") format("ttf");
