@@ -1,14 +1,12 @@
 body {
-  font-family: monaco;
+  font-family: monaco, sans-serif;
   background-color: black;
 }
 
-/*
 @font-face {
   font-family: monaco;
   src: url("monaco.ttf") format("ttf");
 }
-/*changed monaco file name?*/
 
 /* Animations */
 .space, .period, .comma, .a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .k, .l, .m, .n, .o, .p, .q, .r, .s, .t, .u, .v, .w, .x, .y, .z {
@@ -71,16 +69,14 @@ body {
 @media screen and (max-width: 480px) {
   h1 {
     color: #FFFFFF;
-    font-size: 1.5em;
+    font-size: 1.7em;
     padding-top: 20px;
-    position: fixed;
   }
   h2 {
     color: #FFFFFF;
-    font-size: 1em;
+    font-size: 1.2em;
     font-style: italic;
     line-height: 0.5em;
-    position: fixed;
   }
   h3 {
     color: #FFFFFF;
@@ -89,7 +85,6 @@ body {
     position: absolute;
     width: 100%;
     bottom: 20px;
-    position: fixed;
   }
   .contents {
     color: #00FF00;
@@ -99,9 +94,10 @@ body {
     z-index: 1;
     padding: 5px;
     margin: -5px;
+    font-size: 1.2em;
   }
   p {
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 2em;
     color: #FFFFFF;
   }
