@@ -73,12 +73,14 @@ body {
     color: #FFFFFF;
     font-size: 1.5em;
     padding-top: 20px;
+    position: fixed;
   }
   h2 {
     color: #FFFFFF;
     font-size: 1em;
     font-style: italic;
     line-height: 0.5em;
+    position: fixed;
   }
   h3 {
     color: #FFFFFF;
@@ -87,6 +89,7 @@ body {
     position: absolute;
     width: 100%;
     bottom: 20px;
+    position: fixed;
   }
   .contents {
     color: #00FF00;
