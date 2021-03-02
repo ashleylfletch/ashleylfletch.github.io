@@ -104,7 +104,7 @@ body {
   h4 {
     color: #00FF00;
     background-color: #000000;
-    font-size: 14pt;
+    font-size: 12pt;
     line-height: 10pt;
     position: fixed;
   }
@@ -155,12 +155,12 @@ body {
     margin: -5px;
     font-size: 1.5em;
   }
-  .contents:hover {
-    color: #FFFFFF
-  }
   p {
     font-size: 1.2em;
     line-height: 1.5em;
+    color: #FFFFFF;
+  }
+  a:hover {
     color: #FFFFFF;
   }
   h4 {
