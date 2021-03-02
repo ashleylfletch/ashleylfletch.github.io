@@ -1,5 +1,5 @@
 body {
-  font-family: "Andale Mono", AndaleMono, monospace;
+  font-family: Menlo, Consolas, DejaVu Sans Mono, monospace;
   background-color: black;
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 .variation1 {
-  animation: variation1 20s infinite;
+  animation: variation1 40s infinite;
 }
 
 #variation2-whitetext {
