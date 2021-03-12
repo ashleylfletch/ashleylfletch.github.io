@@ -1,0 +1,130 @@
+html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, font, ins, kbd, q, s, samp, 
+small, strike, sub, var,
+ dl, dd, dt, ul, ol, li,
+ fieldset, form, table, caption, tbody, 
+tfoot, thead, tr, th, td, header, section,
+footer, article, details {
+ padding: 0; margin: 0; border: 0; outline: 0;
+ font-family: inherit; font-style: inherit; font-size:
+ 100%; font-weight: inherit; vertical-align: baseline;
+ }
+
+h1 {
+  font-family: ozfont;
+  font-size: 30pt;
+}
+
+@font-face {
+  font-family: ozfont;
+  src: url(ozfont.ttf);
+}
+
+h4 {
+  font-size: 6pt;
+}
+
+#home {
+  background-image: url(../images/map.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#page-1 {
+  position: fixed;
+  top: 50%;
+  left: 8%;
+  width: 60px;
+  background-color: #d0e7df;
+  padding: 5px;
+}
+
+#page-2 {
+  position: fixed;
+  top: 45%;
+  left: 24%;
+  width: 60px;
+  background-color: #d0e7df;
+  padding: 5px;
+}
+
+#page-3 {
+  position: fixed;
+  top: 54%;
+  left: 33%;
+  width: 60px;
+  background-color: #d0e7df;
+  padding: 5px;
+}
+
+#page-4 {
+  position: fixed;
+  top: 43%;
+  left: 45%;
+  width: 80px;
+  background-color: #d0e7df;
+  padding: 5px;
+}
+
+#page-5 {
+  position: fixed;
+  top: 30%;
+  left: 63%;
+  width: 70px;
+  background-color: #d0e7df;
+  padding: 5px;
+}
+
+#page-7 {
+  position: fixed;
+  top: 59%;
+  left: 48%;
+  width: 50px;
+  background-color: #d0e7df;
+  padding: 5px;
+}
+
+#page-8 {
+  position: fixed;
+  top: 65%;
+  left: 55%;
+  width: 60px;
+  background-color: #d0e7df;
+  padding: 5px;
+}
+
+#page-9 {
+  position: fixed;
+  top: 76%;
+  left: 48%;
+  width: 50px;
+  background-color: #d0e7df;
+  padding: 5px;
+}
+
+#page-10 {
+  position: fixed;
+  top: 75%;
+  left: 40%;
+  width: 60px;
+  background-color: #d0e7df;
+  padding: 5px;
+}
+
+#blue {
+  background-color: #52b2e5;
+}
+
+#green {
+  background-color: #4aafa5;
+}
+
+#yellow {
+  background-color: #f4e29f;
+}
+
+#red {
+  background-color: #fb3e46;
+}
