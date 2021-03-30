@@ -15,6 +15,7 @@ footer, article, details {
 h1 {
   font-family: ozfont;
   font-size: 30pt;
+  margin-bottom: -5px;
 }
 
 @font-face {
@@ -26,6 +27,16 @@ h4 {
   font-size: 6pt;
 }
 
+p {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10px;
+}
+
+img {
+  margin-top: 10px;
+}
+
 /*
 #home {
   background-image: url(../images/map.jpg);
@@ -33,6 +44,10 @@ h4 {
   background-repeat: no-repeat;
 }
 */
+
+#home img {
+  margin-top: 0;
+}
 
 #map {
   width: 100%;
@@ -47,7 +62,7 @@ h4 {
   position: absolute;
 }
 
-#page-1 {
+#page-1-link {
   position: fixed;
   top: 50%;
   left: 8%;
@@ -56,7 +71,7 @@ h4 {
   padding: 5px;
 }
 
-#page-2 {
+#page-2-link {
   position: fixed;
   top: 45%;
   left: 24%;
@@ -65,7 +80,18 @@ h4 {
   padding: 5px;
 }
 
-#page-3 {
+#page-2-style {
+  background-color: #52b2e5;
+  background-image: url(../images/roadbackground.png);
+  background-size: 100%;
+  background-repeat: none;
+}
+
+#page-2-style img {
+  position: absolute;
+}
+
+#page-3-link {
   position: fixed;
   top: 54%;
   left: 33%;
@@ -74,7 +100,16 @@ h4 {
   padding: 5px;
 }
 
-#page-4 {
+#page-3-style {
+  background-color: #52b2e5;
+}
+
+#page-3-style h1 {
+  color: #fb3e46;
+}
+
+
+#page-4-link {
   position: fixed;
   top: 43%;
   left: 45%;
@@ -83,7 +118,7 @@ h4 {
   padding: 5px;
 }
 
-#page-5 {
+#page-5-link {
   position: fixed;
   top: 30%;
   left: 63%;
@@ -92,7 +127,7 @@ h4 {
   padding: 5px;
 }
 
-#page-7 {
+#page-7-link {
   position: fixed;
   top: 59%;
   left: 48%;
@@ -101,7 +136,7 @@ h4 {
   padding: 5px;
 }
 
-#page-8 {
+#page-8-link {
   position: fixed;
   top: 65%;
   left: 55%;
@@ -110,7 +145,7 @@ h4 {
   padding: 5px;
 }
 
-#page-9 {
+#page-9-link {
   position: fixed;
   top: 76%;
   left: 48%;
@@ -119,7 +154,7 @@ h4 {
   padding: 5px;
 }
 
-#page-10 {
+#page-10-link {
   position: fixed;
   top: 75%;
   left: 40%;
@@ -142,9 +177,4 @@ h4 {
 
 #red {
   background-color: #fb3e46;
-}
-
-#animate {
-    position: relative;
-    width: 40%;
 }
