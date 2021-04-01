@@ -74,10 +74,19 @@ function dragElement(elmnt) {
 //JS Goal: entire page fades to black then back to normal
 
 //Page 4
+//JS Goal: click button to show Wizard
+function revealWizard() {
+  document.getElementById("hidden").style.display = 'block';
+}
 
 //Page 5
 
+
 //Page 6
+//JS Goal: click button to show TRUE Wizard
+function revealWizard2() {
+  document.getElementById("hidden2").style.display = 'block';
+}
 
 //Page 7
 
