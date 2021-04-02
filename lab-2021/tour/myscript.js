@@ -1,5 +1,3 @@
-console.log("hi");
-
 //Page 1
 function land() {
 	document.getElementById("page-1-twister").id = 'page-1-style';
@@ -72,7 +70,7 @@ function melt() {
 
 //Page 6
 function revealWizard2() {
-  document.getElementById("hidden2").style.display = 'block';
+  document.getElementById("hidden").style.display = 'block';
 }
 
 //Page 7
@@ -94,5 +92,23 @@ function overwall() {
 }
 
 //Page 9
+function headgone1() {
+	document.getElementById("head1").style.display = 'none';
+}
 
-//Page 10
+function headgone2() {
+	document.getElementById("head2").style.display = 'none';
+}
+
+function headgone3() {
+	document.getElementById("head3").style.display = 'none';
+}
+
+//Page 11
+function numbercheck(){
+    if (document.getElementById('number').value == '3') {
+        window.location.href = "index.html";
+    } else {
+        window.location.href = "11-silver-shoes.html";
+    }
+};
