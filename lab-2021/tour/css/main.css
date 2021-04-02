@@ -174,7 +174,7 @@ button {
 
 #page-3-style {
   background-color: #52b2e5;
-  margin: 25px;
+  margin: 15px;
 }
 
 #page-3-image {
@@ -204,6 +204,11 @@ button {
   padding: 5px;
 }
 
+#page-4-style {
+  background-color: #4aafa5;
+  margin: 15px;
+}
+
 #hidden {
   display: none;
   margin: 15px;
@@ -226,6 +231,11 @@ button {
 /* Page 6 */
 #hidden2 {
   display: none;
+  margin: 15px;
+}
+
+#page-6-style {
+  background-color: #4aafa5;
   margin: 15px;
 }
 
@@ -320,6 +330,16 @@ button {
   margin: 15px;
 }
 
+#head {
+  -webkit-animation: move 1s infinite alternate;
+  animation: move 1s infinite alternate;
+}
+
+@-webkit-keyframes move {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
 /* Page 10 */
 #page-10-link {
   position: fixed;
@@ -337,10 +357,6 @@ button {
 
 #blue {
   background-color: #52b2e5;
-}
-
-#green {
-  background-color: #4aafa5;
 }
 
 #yellow {
