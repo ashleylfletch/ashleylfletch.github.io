@@ -45,10 +45,24 @@ button {
 a {
   text-decoration: none;
   color: white;
+  font-size: 20pt;
+  cursor: pointer;
 }
 
 a:hover {
   color: black;
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 /* Homepage */
@@ -62,21 +76,53 @@ a:hover {
   position: relative;
 }
 
-#map img {
-  width: 100%;
-  height: 100%;
-  object-fit: cov;
-  position: absolute;
+/* Page 1 */
+#page-1-twister {
+  background-image: url(../images/twister.jpeg);
+  background-size: cover;
+  padding: 15px;
 }
 
-/* Page 1 */
-#page-1-link {
-  position: fixed;
-  top: 50%;
-  left: 8%;
-  width: 60px;
-  background-color: #d0e7df;
-  padding: 5px;
+#page-1-twister button {
+  background-color: black;
+}
+
+#spinimage {
+  margin-top: 10%;
+}
+
+#spinimage {
+    position: absolute;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.hidden {
+  display: none;
+}
+
+#page-1-h1 {
+  display: none;
+  font-family: ozfont;
+  font-size: 30pt;
+  margin-bottom: -5px;
+}
+
+#page-1-h2 {
+  display: none;
+}
+
+#page-1-h3 {
+  display: none;
+}
+
+#img1 {
+  display: none;
+  margin: 15px;
 }
 
 #page-1-style {
@@ -84,8 +130,13 @@ a:hover {
   padding: 15px;
 }
 
-#page-1-style img{
-  margin: 50px;
+#page-1-link {
+  position: fixed;
+  top: 50%;
+  left: 8%;
+  width: 60px;
+  background-color: #d0e7df;
+  padding: 5px;
 }
 
 /* Page 2 */
@@ -108,6 +159,7 @@ a:hover {
 
 #page-2-style img {
   position: absolute;
+  margin-left: -150px;
 }
 
 /* Page 3 */
@@ -122,10 +174,24 @@ a:hover {
 
 #page-3-style {
   background-color: #52b2e5;
+  margin: 25px;
 }
 
-#page-3-style h1 {
-  color: #fb3e46;
+#page-3-image {
+  display: block;
+}
+
+#mouse {
+  display: none;
+  width: 20%;
+  cursor: pointer;
+}
+
+#poppy {
+  width: 50%;
+  display: block;
+  cursor: pointer;
+  margin: 15px;
 }
 
 /* Page 4 */
@@ -153,6 +219,10 @@ a:hover {
   padding: 5px;
 }
 
+#melt {
+  display: none;
+}
+
 /* Page 6 */
 #hidden2 {
   display: none;
@@ -169,6 +239,18 @@ a:hover {
   padding: 5px;
 }
 
+#page-7-style {
+  background-color: #fb3e46;
+  margin: 15px;
+}
+
+#branch1 {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  margin: -15px;
+}
+
 /* Page 8 */
 #page-8-link {
   position: fixed;
@@ -177,6 +259,26 @@ a:hover {
   width: 60px;
   background-color: #d0e7df;
   padding: 5px;
+}
+
+#page-8-style {
+  background-color: #fb3e46;
+  margin: 15px;
+}
+
+#wall {
+  background-color:	white;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  margin-top: 25vh;
+  height: 75vh;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+#page-8-style button {
+  background-color: #fb3e46;
 }
 
 /* Page 9 */
@@ -189,6 +291,11 @@ a:hover {
   padding: 5px;
 }
 
+#page-9-style {
+  background-color: #fb3e46;
+  margin: 15px;
+}
+
 /* Page 10 */
 #page-10-link {
   position: fixed;
@@ -197,6 +304,11 @@ a:hover {
   width: 60px;
   background-color: #d0e7df;
   padding: 5px;
+}
+
+#page-10-style {
+  background-color: #fb3e46;
+  margin: 15px;
 }
 
 #blue {
@@ -211,6 +323,29 @@ a:hover {
   background-color: #f4e29f;
 }
 
-#red {
-  background-color: #fb3e46;
+/* Phone */
+@media screen and (max-width: 480px) {
+  #map {
+    width: 100%;
+    height: auto;
+  }
+  #map img {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 480px) {
+  #map {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  #map img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
 }

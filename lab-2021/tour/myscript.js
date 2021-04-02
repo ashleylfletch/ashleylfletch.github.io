@@ -1,89 +1,76 @@
 console.log("hi");
 
 //Page 1
-//JS Goal: spin image on hover
-var looper;
-var degrees = 0;
-function rotateAnimation(el,speed){
-	var elem = document.getElementById(el);
-	if(navigator.userAgent.match("Chrome")){
-		elem.style.WebkitTransform = "rotate("+degrees+"deg)";
-	} else if(navigator.userAgent.match("Firefox")){
-		elem.style.MozTransform = "rotate("+degrees+"deg)";
-	} else if(navigator.userAgent.match("MSIE")){
-		elem.style.msTransform = "rotate("+degrees+"deg)";
-	} else if(navigator.userAgent.match("Opera")){
-		elem.style.OTransform = "rotate("+degrees+"deg)";
-	} else {
-		elem.style.transform = "rotate("+degrees+"deg)";
-	}
-	looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed);
-	degrees++;
-	if(degrees > 359){
-		degrees = 1;
-	}
-	document.getElementById("status").innerHTML = "rotate("+degrees+"deg)";
+function land() {
+	document.getElementById("page-1-twister").id = 'page-1-style';
+	document.getElementById("spinimage").id = 'hidden';
+	document.getElementById("twisterbutton").id = 'hidden';
+	document.getElementById("img1").style.display = 'block';
+	document.getElementById("page-1-h1").style.display = 'inline';
+	document.getElementById("page-1-h2").style.display = 'inline';
+	document.getElementById("page-1-h3").style.display = 'inline';
 }
 
 //Page 2
-//image moves from left to right
-dragElement(document.getElementById("img2"));
+var img = document.getElementById("img2");
+var moving = false;
 
-function dragElement(elmnt) {
-  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.id + "header")) {
-    // if present, the header is where you move the DIV from:
-    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-  } else {
-    // otherwise, move the DIV from anywhere inside the DIV:
-    elmnt.onmousedown = dragMouseDown;
+img.addEventListener("mousedown", initialClick, false);
+
+function move(e){
+
+  var newX = e.clientX - 10;
+  var newY = e.clientY - 10;
+
+  image.style.left = newX + "px";
+  image.style.top = newY + "px";
+
+
+}
+
+function initialClick(e) {
+
+  if(moving){
+    document.removeEventListener("mousemove", move);
+    moving = !moving;
+    return;
   }
 
-  function dragMouseDown(e) {
-    e = e || window.event;
-    e.preventDefault();
-    // get the mouse cursor position at startup:
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    document.onmouseup = closeDragElement;
-    // call a function whenever the cursor moves:
-    document.onmousemove = elementDrag;
-  }
+  moving = !moving;
+  image = this;
 
-  function elementDrag(e) {
-    e = e || window.event;
-    e.preventDefault();
-    // calculate the new cursor position:
-    pos1 = pos3 - e.clientX;
-    pos2 = pos4 - e.clientY;
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    // set the element's new position:
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-  }
+  document.addEventListener("mousemove", move, false);
 
-  function closeDragElement() {
-    // stop moving when mouse button is released:
-    document.onmouseup = null;
-    document.onmousemove = null;
-  }
 }
 
 //Page 3
-//JS Goal: entire page fades to black then back to normal
+function sleep() {
+	document.body.style.backgroundColor = 'black';
+	document.getElementById("page-3-title").style.color = 'black';
+	document.getElementById("page-3-title").style.color = 'black';
+	document.getElementById("page-3-image").style.display = 'none';
+	document.getElementById("poppy").style.display = 'none';
+	document.getElementById("page-3-next").style.color = 'black';
+	document.getElementById("mouse").style.display = 'block';
+}
+
+function wake() {
+	window.location.reload();
+}
 
 //Page 4
-//JS Goal: click button to show Wizard
 function revealWizard() {
   document.getElementById("hidden").style.display = 'block';
 }
 
 //Page 5
+function melt() {
+	document.getElementById("witch").style.display = 'none';
+	document.getElementById("melt").style.display = 'block';
+}
 
 
 //Page 6
-//JS Goal: click button to show TRUE Wizard
 function revealWizard2() {
   document.getElementById("hidden2").style.display = 'block';
 }
@@ -91,6 +78,9 @@ function revealWizard2() {
 //Page 7
 
 //Page 8
+function overwall() {
+	document.getElementById("wall").style.display = 'none';
+}
 
 //Page 9
 
