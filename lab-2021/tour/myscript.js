@@ -76,6 +76,17 @@ function revealWizard2() {
 }
 
 //Page 7
+function cut1() {
+	document.getElementById("branch1").style.display = 'none';
+}
+
+function cut2() {
+	document.getElementById("branch2").style.display = 'none';
+}
+
+function cut3() {
+	document.getElementById("branch3").style.display = 'none';
+}
 
 //Page 8
 function overwall() {

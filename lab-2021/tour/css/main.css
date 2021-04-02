@@ -152,8 +152,8 @@ button {
 #page-2-style {
   background-color: #52b2e5;
   background-image: url(../images/roadbackground.png);
-  background-size: 100%;
-  background-repeat: none;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 15px;
 }
 
@@ -248,7 +248,31 @@ button {
   position: fixed;
   z-index: 1;
   width: 100%;
-  margin: -15px;
+  margin-left: -15px;
+  margin-right: -15px;
+  top: -100px;
+  cursor: pointer;
+}
+
+#branch2 {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  margin-left: -15px;
+  margin-right: -15px;
+  top: 150px;
+  transform: scaleX(-1);
+  cursor: pointer;
+}
+
+#branch3 {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  margin-left: -15px;
+  margin-right: -15px;
+  top: 300px;
+  cursor: pointer;
 }
 
 /* Page 8 */
