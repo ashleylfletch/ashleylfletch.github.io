@@ -16,19 +16,18 @@ body {
   background-image: url(images/tv.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: 5%;
+  margin-right: 30%;
+  margin-top: 5%;
+  background-color: black;
 }
 
 #tv {
-  width: 70%;
-  left: 5%;
-  top: 10vh;
+  padding-top: 56.25%;
+  background-image: url('images/image.png');
+  background-size: cover;
+  height: 20vh;
   margin-bottom: 25px;
-  position: relative;
-}
-
-#image {
-  width: 100%;
-  left: 10%;
 }
 
 .screenshot {
