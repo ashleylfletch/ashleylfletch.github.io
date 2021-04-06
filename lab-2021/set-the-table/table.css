@@ -9,7 +9,7 @@ body {
   height: 400px;
   width: 90%;
 }
-.tablecloth, .wine, .plate {
+.tablecloth, .wine, .plate, .lasagna, .basket, .bread {
   position: absolute;
   top: 0;
   left: 0;
@@ -19,21 +19,35 @@ body {
 .tablecloth {
   z-index: 8;
 }
-.wine, .plate {
+.wine, .plate, .lasagna, .basket, .bread {
   z-index: 10;
 }
 
 .tablecloth {
-  height: 100%;
   width: 100%;
+  height: 120%;
 }
 
 .wine {
-  width: 80px;
-  height: 90px;
+  height: 200px;
 }
 
 .plate {
-  height: 150px;
+  width: 250px;
+}
+
+.lasagna {
   width: 150px;
+}
+
+.basket {
+  width: 300px;
+  left: 35%;
+  top: 30%;
+}
+
+.bread {
+  width: 200px;
+  left: 40%;
+  top: 30%;
 }
