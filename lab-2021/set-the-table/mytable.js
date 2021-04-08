@@ -31,9 +31,6 @@ function setTable(allItems) {
     console.log(name);
     let imageUrl = item.fields.images[0].url;
     let itemImage = document.createElement('img');
-    itemImage.src = imageUrl;
-    itemImage.classList.add(item.fields.kind_of_item);
-    container.appendChild(itemImage);
 
     if (name === "Wine") {
       for (var i=0; i<2; i++) {
