@@ -57,23 +57,26 @@ let sliderValue = this.value;
   let tv = document.getElementById("tv");
   if (sliderValue === "1") {
     tv.style.backgroundImage = 'url(' + allImages[1] + ')';
+    document.getElementById("season").innerHTML = "Cult";
   }
   if (sliderValue === "2") {
     tv.style.backgroundImage = 'url(' + allImages[2] + ')';
+    document.getElementById("season").innerHTML = "Asylum";
   }
   if (sliderValue === "3") {
     tv.style.backgroundImage = 'url(' + allImages[3] + ')';
+    document.getElementById("season").innerHTML = "Freak Show";
   }
   if (sliderValue === "4") {
     tv.style.backgroundImage = 'url(' + allImages[4] + ')';
+    document.getElementById("season").innerHTML = "Roanoke";
   }
   if (sliderValue === "5") {
     tv.style.backgroundImage = 'url(' + allImages[5] + ')';
+    document.getElementById("season").innerHTML = "Asylum";
   }
   if (sliderValue === "6") {
     tv.style.backgroundImage = 'url(' + allImages[6] + ')';
-  }
-  if (sliderValue === "7") {
-    tv.style.backgroundImage = 'url(' + allImages[7] + ')';
+    document.getElementById("season").innerHTML = "Roanoke";
   }
 }
