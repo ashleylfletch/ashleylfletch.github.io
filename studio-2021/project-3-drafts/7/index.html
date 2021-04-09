@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Project 3</title>
+  </head>
+<body>
+  <div id="container">
+    <center>
+      <div id="tv">
+      </div></center>
+
+    <div id="controls">
+      <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="1" class="slider" id="myRange">
+      </div>
+
+      <div id="timestamp">
+        <h2><span id="timestamp-number">00:00</span></h2>
+      </div>
+
+      <div id="left-buttons">
+        <img id="play" src="images/playbutton.png">
+        <img id="speed" src="images/speedbutton.png">
+      </div>
+
+      <div id="text">
+        <h2><center><span id="season">Cult</span>, Episode <span id="episode">1</span></center></h2>
+      </div>
+
+      <div id="right-buttons">
+        <img id="about" src="images/about.png">
+      </div>
+
+      <script src="airtable.js"></script>
+      <script src="script.js"></script>
+</body>
+</html>
