@@ -74,3 +74,22 @@ let sliderValue = this.value;
     document.getElementById("timestamp-number").innerHTML = "00:03";
   }
 }
+
+//About Button
+var popup = document.getElementById('aboutpopup');
+var aboutbutton = document.getElementById('about');
+var span = document.getElementsByClassName('close')[0];
+
+aboutbutton.onclick = function() {
+  popup.style.display = "block";
+}
+
+span.onclick = function(){
+  popup.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == popup){
+    popup.style.display = "none";
+  }
+}

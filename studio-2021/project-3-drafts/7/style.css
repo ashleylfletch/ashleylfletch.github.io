@@ -103,6 +103,31 @@ h2 {
   cursor: pointer;
 }
 
+#aboutpopup {
+  display: none;
+  background-color: rgba(0, 0, 0, .80);
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+#popuptext {
+  text-align: center;
+  padding: 20%
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28pt;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5%;
+}
+
 /* Slider */
 .slidecontainer {
   width: 94%;
