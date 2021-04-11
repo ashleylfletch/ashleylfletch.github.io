@@ -29,7 +29,7 @@ body {
   text-align: center;
 }
 
-.tablecloth, .wine, .plate, .lasagna, .basket, .bread {
+.tablecloth, .wine1, .wine2, .plate1, .plate2, .lasagna1, .lasagna2, .basket, .bread, .bottle {
   position: absolute;
   top: 0;
   left: 0;
@@ -44,30 +44,63 @@ body {
   margin: 0 auto;
 }
 
-.wine, .plate, .lasagna, .basket, .bread {
+.wine1, .wine2, .plate1, .plate2, .lasagna1, .lasagna2, .basket, .bread, .bottle {
   z-index: 10;
 }
 
-.wine {
+.wine1 {
+  display: none;
   height: 200px;
+  left: 29%;
+  top: 30%;
 }
 
-.plate {
+.wine2 {
+  display: none;
+  height: 200px;
+  left: 63%;
+  top: 1%;
+}
+
+.plate1 {
   width: 250px;
+  left: 10%;
+  top: 33%;
 }
 
-.lasagna {
+.plate2 {
+  width: 250px;
+  left: 65%;
+  top: 33%;
+}
+
+.lasagna1 {
   width: 150px;
+  left: 14%;
+  top: 30%;
+}
+
+.lasagna2 {
+  width: 150px;
+  left: 69%;
+  top: 30%;
 }
 
 .basket {
   width: 300px;
-  left: 35%;
-  top: 30%;
+  left: 40%;
+  top: 40%;
 }
 
 .bread {
   width: 200px;
-  left: 40%;
-  top: 30%;
+  left: 45%;
+  top: 40%;
+}
+
+.bottle {
+  display: none;
+  width: 230px;
+  left: 30%;
+  top: 3%;
 }

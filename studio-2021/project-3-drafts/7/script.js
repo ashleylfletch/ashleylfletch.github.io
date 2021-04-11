@@ -76,20 +76,32 @@ let sliderValue = this.value;
 }
 
 //About Button
-var popup = document.getElementById('aboutpopup');
+var aboutpopup = document.getElementById('aboutpopup');
+var speedpopup = document.getElementById('speedpopup');
 var aboutbutton = document.getElementById('about');
+var speedbutton = document.getElementById('speed');
 var span = document.getElementsByClassName('close')[0];
+var span2 = document.getElementsByClassName('close')[1];
 
 aboutbutton.onclick = function() {
-  popup.style.display = "block";
+  aboutpopup.style.display = "block";
+}
+
+speedbutton.onclick = function() {
+  speedpopup.style.display = "block";
 }
 
 span.onclick = function(){
-  popup.style.display = "none";
+  aboutpopup.style.display = "none";
+}
+
+span2.onclick = function(){
+  speedpopup.style.display = "none";
 }
 
 window.onclick = function(event) {
-  if (event.target == popup){
-    popup.style.display = "none";
+  if (event.target == aboutpopup || event.target == speedpopup){
+    aboutpopup.style.display = "none";
+    speedpopup.style.display = "none";
   }
 }
