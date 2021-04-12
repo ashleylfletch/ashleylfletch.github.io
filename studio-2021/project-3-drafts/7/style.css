@@ -22,18 +22,6 @@ body {
 }
 
 h1 {
-  font-family: AHSFont, Helvetica, Arial, sans-serif;
-  font-size: 70pt;
-  font-weight: normal;
-  color: white;
-}
-
-@font-face {
-  font-family: AHSFont;
-  src: url(font.otf);
-}
-
-h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12pt;
   color: white;
@@ -41,6 +29,7 @@ h2 {
 }
 
 #tv {
+  background-image: url('images/titlecard.png');
   background-size: cover;
   background-position: center;
   height: 83vh;
@@ -64,14 +53,18 @@ h2 {
 
 #play {
   height: 5vh;
-  margin-right: 10%;
   cursor: pointer;
+  display: block;
+  float: left;
+  margin-right: 10%;
 }
 
 #pause {
   height: 5vh;
-  margin-right: 10%;
   cursor: pointer;
+  display: none;
+  float: left;
+  margin-right: 10%;
 }
 
 #speed {
@@ -123,24 +116,33 @@ h2 {
 
 #speedpopup {
   left: 5%;
-  top: 63vh;
-  width: 20%;
-  height: 20vh;
+  top: 70vh;
+  width: 30%;
+  height: 13vh;
 }
 
 #popuptext {
   text-align: left;
-  padding: 10%;
+  padding: 10px;
   padding-right: 20%;
+}
+
+#onex {
+  float: left;
+  cursor: pointer;
+}
+
+#twox {
+  float: right;
+  cursor: pointer;
 }
 
 .close {
   color: white;
   float: right;
-  font-size: 28pt;
+  font-size: 20pt;
   cursor: pointer;
-  padding-top: 7%;
-  padding-right: 10%;
+  padding: 10px;
 }
 
 /* Slider */

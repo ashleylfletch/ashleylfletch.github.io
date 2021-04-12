@@ -15,64 +15,50 @@ base('sarah-paulson').select({}).eachPage(function page(collectionItems, fetchNe
 });
 
 let allImages = [];
+let allSeasons = [];
+let allEpisodes = [];
+let allTimestamps = [];
 function displayCollection(allItems) {
     let container = document.createElement("div");
   container.classList.add("container");
   document.body.appendChild(container);
 
-  allItems.forEach(function(item) {
-      let season = item.fields.season;
-    allImages.push(item.fields.screenshot[0].url);
-    // let imageUrl = item.fields.images[0].url;
-    // let itemImage = document.createElement('img');
-    // itemImage.src = imageUrl;
-    // itemImage.classList.add(item.fields.season);
-    // container.appendChild(itemImage);
 
-    // if (season === "screenshot") {
-    //   let screenshot = document.createElement('img');
-    //   screenshot.src = imageUrl;
-    //   screenshot.classList.add("screenshot");
-    //   screenshot.appendChild(screenshot);
-    // }
+  allItems.forEach(function(item) {
+    allImages.push(item.fields.screenshot[0].url);
+    allSeasons.push(item.fields.season);
+    allEpisodes.push(item.fields.episode);
+    allTimestamps.push(item.fields.timestamp);
   })
 }
-//
-//
-//Controls
-//Sound
-function play() {
- var audio = document.getElementById("audio");
- audio.play();
- audio.currentTime = 5;
-}
 
-// //Slider
+//Controls
+//Slider
 var slider = document.getElementById("myRange");
 
 slider.oninput = function() {
   console.log(this.value);
 
 let sliderValue = this.value;
-  let tv = document.getElementById("tv");
-  if (sliderValue === "1") {
-    tv.style.backgroundImage = 'url(' + allImages[1] + ')';
-    document.getElementById("season").innerHTML = "Cult";
-    document.getElementById("episode").innerHTML = "1";
-    document.getElementById("timestamp-number").innerHTML = "00:01";
-  }
-  if (sliderValue === "2") {
-    tv.style.backgroundImage = 'url(' + allImages[2] + ')';
-    document.getElementById("season").innerHTML = "Asylum";
-    document.getElementById("episode").innerHTML = "2";
-    document.getElementById("timestamp-number").innerHTML = "00:02";
-  }
-  if (sliderValue === "3") {
-    tv.style.backgroundImage = 'url(' + allImages[3] + ')';
-    document.getElementById("season").innerHTML = "Freak Show";
-    document.getElementById("episode").innerHTML = "3";
-    document.getElementById("timestamp-number").innerHTML = "00:03";
-  }
+let tv = document.getElementById("tv");
+  tv.style.backgroundImage = 'url(' + allImages[sliderValue] + ')';
+  document.getElementById("season").innerHTML = allSeasons[sliderValue];
+  document.getElementById("episode").innerHTML = ', Episode ' + allEpisodes[sliderValue];
+  document.getElementById("timestamp").innerHTML = allTimestamps[sliderValue];
+}
+
+//Play/Pause Buttons
+var playbutton = document.getElementById('play');
+var pausebutton = document.getElementById('pause');
+
+playbutton.onclick = function() {
+  playbutton.style.display = "none";
+  pausebutton.style.display = "block";
+}
+
+pausebutton.onclick = function() {
+  playbutton.style.display = "block";
+  pausebutton.style.display = "none";
 }
 
 //About Button
