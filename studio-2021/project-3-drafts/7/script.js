@@ -7,7 +7,7 @@ var base = new Airtable({ apiKey: "key13Xr8YZ7doV9Tg" }).base(
 let allItems = [];
 
 base('sarah-paulson').select({
-  view: 'grid'
+  view: 'Grid'
 }).eachPage(function page(collectionItems, fetchNextPage) {
   collectionItems.forEach(function(item) {
     allItems.push(item);
