@@ -1,0 +1,180 @@
+html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, font, ins, kbd, q, s, samp, 
+small, strike, sub, var,
+ dl, dd, dt, ul, ol, li,
+ fieldset, form, table, caption, tbody, 
+tfoot, thead, tr, th, td, header, section,
+footer, article, details {
+ padding: 0; margin: 0; border: 0; outline: 0;
+ font-family: inherit; font-style: inherit; font-size:
+ 100%; font-weight: inherit; vertical-align: baseline;
+ }
+
+body {
+  background-color: black;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+}
+
+h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12pt;
+  color: white;
+  font-style: normal;
+}
+
+#tv {
+  background-image: url('images/titlecard.png');
+  background-size: cover;
+  background-position: center;
+  height: 83vh;
+  width: 100%;
+  margin-bottom: 3vh;
+}
+
+/* Controls */
+#controls {
+  height: 14vh;
+  width: 94%;
+  position: relative;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#left-buttons {
+  float: left;
+  width: 25%;
+}
+
+#play {
+  height: 5vh;
+  cursor: pointer;
+  display: block;
+  float: left;
+  margin-right: 10%;
+}
+
+#pause {
+  height: 5vh;
+  cursor: pointer;
+  display: none;
+  float: left;
+  margin-right: 10%;
+}
+
+#speed {
+  height: 5vh;
+  cursor: pointer;
+}
+
+#timestamp {
+  float: right;
+  width: 6%;
+  text-align: right;
+  margin-top: -10px;
+}
+
+#text {
+  float: left;
+  width: 50%;
+}
+
+#right-buttons {
+  float: right;
+  width: 25%;
+}
+
+#about {
+  height: 5vh;
+  float: right;
+  cursor: pointer;
+}
+
+.popup {
+  display: none;
+  background-color: rgba(0, 0, 0, .80);
+  position: fixed;
+  z-index: 1;
+  left: 25%;
+  top: 33vh;
+  width: 50%;
+  height: 50vh;
+}
+
+#aboutpopup {
+  left: 55%;
+  top: 33vh;
+  width: 40%;
+  height: 50vh;
+}
+
+#speedpopup {
+  left: 5%;
+  top: 70vh;
+  width: 30%;
+  height: 13vh;
+}
+
+#popuptext {
+  text-align: left;
+  padding: 20px;
+  padding-right: 20%;
+}
+
+#onex {
+  float: left;
+  cursor: pointer;
+}
+
+#twox {
+  float: right;
+  cursor: pointer;
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 20pt;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Slider */
+.slidecontainer {
+  width: 94%;
+  float: left;
+  margin-bottom: 2vh;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 1vh;
+  background: #FF0000;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4vh;
+  width: 4vh;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}

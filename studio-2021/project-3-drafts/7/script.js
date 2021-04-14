@@ -1,4 +1,3 @@
-console.log('this is working');
 var Airtable = require("airtable");
 var base = new Airtable({ apiKey: "key13Xr8YZ7doV9Tg" }).base(
   "appFhx8BNwmUKTTwE"
@@ -12,6 +11,8 @@ base('sarah-paulson').select({
   collectionItems.forEach(function(item) {
     allItems.push(item);
   });
+
+  fetchNextPage();
 
   displayCollection(allItems);
 });
@@ -39,14 +40,24 @@ function displayCollection(allItems) {
 var slider = document.getElementById("myRange");
 
 slider.oninput = function() {
-  console.log(this.value);
-
-let sliderValue = this.value;
-let tv = document.getElementById("tv");
+  let sliderValue = this.value;
+  let tv = document.getElementById("tv");
   tv.style.backgroundImage = 'url(' + allImages[sliderValue] + ')';
   document.getElementById("season").innerHTML = allSeasons[sliderValue];
   document.getElementById("episode").innerHTML = ', Episode ' + allEpisodes[sliderValue];
-  document.getElementById("timestamp").innerHTML = allTimestamps[sliderValue];
+  document.getElementById("timestamp-number").innerHTML = allTimestamps[sliderValue];
+}
+
+function autoPlay() {
+  for (var i=0; i<allImages.length; i++) {
+    let currentValue = allImages[i];
+    console.log("this is working");
+    let tv = document.getElementById("tv");
+    tv.style.backgroundImage = 'url(' + allImages[currentValue] + ')';
+    document.getElementById("season").innerHTML = allSeasons[currentValue];
+    document.getElementById("episode").innerHTML = ', Episode ' + allEpisodes[currentValue];
+    document.getElementById("timestamp-number").innerHTML = allTimestamps[currentValue];
+  }
 }
 
 //Play/Pause Buttons
@@ -56,6 +67,7 @@ var pausebutton = document.getElementById('pause');
 playbutton.onclick = function() {
   playbutton.style.display = "none";
   pausebutton.style.display = "block";
+  autoPlay();
 }
 
 pausebutton.onclick = function() {
