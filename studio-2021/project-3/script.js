@@ -59,10 +59,10 @@ function autoPlay() {
     document.getElementById("season").innerHTML = allSeasons[currentValue];
     document.getElementById("episode").innerHTML = ', Episode ' + allEpisodes[currentValue];
     document.getElementById("timestamp-number").innerHTML = allTimestamps[currentValue];
+    setTimeout(function() {
+    }, i * 3000);
   }
 }
-
-window.setTimeout(autoPlay(), 3000);
 
 //Play/Pause Buttons
 var playbutton = document.getElementById('play');
