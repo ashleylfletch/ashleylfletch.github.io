@@ -29,7 +29,7 @@ h1 {
 }
 
 #tv {
-  background-image: url('images/titlecard.png');
+  background-image: url('images/titlecard.jpg');
   background-size: cover;
   background-position: center;
   height: 83vh;
@@ -86,6 +86,10 @@ h1 {
 
 .button {
   height: 5vh;
+}
+
+.button:hover {
+  height: 6vh;
   cursor: pointer;
 }
 
@@ -120,22 +124,41 @@ h1 {
   padding-right: 20%;
 }
 
-#onex {
+#slow {
   float: left;
-  cursor: pointer;
+  padding-right: 15%;
 }
 
-#twox {
-  float: right;
+#normal {
+  float: left;
+  padding-right: 15%;
+}
+
+#fast {
+  float: left;
+}
+
+.speed {
+  color: grey;
+}
+
+.speed:hover {
+  color: white;
   cursor: pointer;
+  font-size: 13pt;
 }
 
 .close {
   color: white;
   float: right;
   font-size: 20pt;
-  cursor: pointer;
   padding: 10px;
+  color: grey;
+}
+
+.close:hover {
+  cursor: pointer;
+  color: white;
 }
 
 /* Slider */
@@ -163,7 +186,12 @@ h1 {
   width: 4vh;
   border-radius: 50%;
   background: white;
+}
+
+.slider::-webkit-slider-thumb:hover {
   cursor: pointer;
+  height: 5vh;
+  width: 5vh;
 }
 
 .slider::-moz-range-thumb {
@@ -200,7 +228,7 @@ h1 {
     width: 100%;
   }
   .slidecontainer {
-    width: 89%;
+    width: 88%;
   }
   #timestamp {
     width: 10%;
@@ -208,5 +236,17 @@ h1 {
   }
   h1 {
     font-size: 10pt;
+  }
+  #speedpopup {
+    left: 5%;
+    top: 63vh;
+    width: 90%;
+    height: 13vh;
+  }
+  #aboutpopup {
+    left: 5%;
+    top: 63vh;
+    width: 90%;
+    height: 40vh;
   }
 }

@@ -49,34 +49,56 @@ slider.oninput = function() {
   document.getElementById("timestamp-number").innerHTML = allTimestamps[sliderValue];
 }
 
+let number = 0;
+let playing = false;
+var speedValue = 1000;
 function autoPlay() {
-  for (var i=0; i<allImages.length; i++) {
-    let currentValue = allImages[i];
-    console.log("this is working");
-    console.log(i);
-    let tv = document.getElementById("tv");
-    tv.style.backgroundImage = 'url(' + allImages[currentValue] + ')';
-    document.getElementById("season").innerHTML = allSeasons[currentValue];
-    document.getElementById("episode").innerHTML = ', Episode ' + allEpisodes[currentValue];
-    document.getElementById("timestamp-number").innerHTML = allTimestamps[currentValue];
-    setTimeout(function() {
-    }, i * 3000);
+  let tv = document.getElementById("tv");
+  if (number < allImages.length + 1 && playing === true) {
+    setTimeout(() => {
+      number = number + 1;
+      tv.style.backgroundImage = 'url(' + allImages[number] + ')';
+      document.getElementById("season").innerHTML = allSeasons[number];
+      document.getElementById("episode").innerHTML = ', Episode ' + allEpisodes[number];
+      document.getElementById("timestamp-number").innerHTML = allTimestamps[number];
+      console.log("this is the count:", number, "this is the total:", allImages.length);
+      autoPlay();
+    }, speedValue);
+    //Playback Speed
+    var slow = document.getElementById('slow');
+    var normal = document.getElementById('normal');
+    var fast = document.getElementById('fast');
+
+    slow.onclick = function() {
+      speedValue = 2000;
+      console.log(speedValue);
+    }
+
+    normal.onclick = function() {
+      speedValue = 1000;
+      console.log(speedValue);
+    }
+
+    fast.onclick = function() {
+      speedValue = 500;
+      console.log(speedValue);
+    }
   }
 }
 
 //Play/Pause Buttons
 var playbutton = document.getElementById('play');
 var pausebutton = document.getElementById('pause');
-
 playbutton.onclick = function() {
   playbutton.style.display = "none";
   pausebutton.style.display = "block";
+  playing = true;
   autoPlay();
 }
-
 pausebutton.onclick = function() {
   playbutton.style.display = "block";
   pausebutton.style.display = "none";
+  playing = false;
 }
 
 //Popups
