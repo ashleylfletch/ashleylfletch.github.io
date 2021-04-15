@@ -12,7 +12,10 @@ base('sarah-paulson').select({
     allItems.push(item);
   });
   fetchNextPage();
-  displayCollection(allItems);
+
+}, function done(err) {
+if (err) { console.error(err); return; }
+ displayCollection(allItems);
 });
 
 let allImages = [];
