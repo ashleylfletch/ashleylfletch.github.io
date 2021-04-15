@@ -182,16 +182,16 @@ h1 {
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  height: 4vh;
-  width: 4vh;
+  height: 3vh;
+  width: 3vh;
   border-radius: 50%;
   background: white;
 }
 
 .slider::-webkit-slider-thumb:hover {
   cursor: pointer;
-  height: 5vh;
-  width: 5vh;
+  height: 4vh;
+  width: 4vh;
 }
 
 .slider::-moz-range-thumb {
@@ -220,7 +220,14 @@ h1 {
   .button {
     height: 4vh;
   }
+  .button:hover {
+    height: 4vh;
+  }
   .slider::-webkit-slider-thumb {
+    height: 3vh;
+    width: 3vh;
+  }
+  .slider::-webkit-slider-thumb:hover {
     height: 3vh;
     width: 3vh;
   }
