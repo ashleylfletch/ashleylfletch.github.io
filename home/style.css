@@ -1,0 +1,35 @@
+body {
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: lightblue;
+  font-family: sans-serif;
+ }
+h1 {
+  color: #21409a;
+  text-align: center;}
+h2 {
+  color: #21409a;
+  background-color: pink;
+ }
+a {
+  color: #21409a;
+  text-decoration: none; }
+a:hover {
+  color: #ffde17; }
+
+.bubble {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  width: 35px;
+  height: 35px;
+  border: 2px solid rgba(255, 222, 23, 0.425);
+  background-color: rgba(255, 222, 23, 0.199);
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.bubble.hide {
+  display: none;
+}
