@@ -1,5 +1,74 @@
+html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, font, ins, kbd, q, s, samp, 
+small, strike, sub, var,
+ dl, dd, dt, ul, ol, li,
+ fieldset, form, table, caption, tbody, 
+tfoot, thead, tr, th, td, header, section,
+footer, article, details {
+ padding: 0; margin: 0; border: 0; outline: 0;
+ font-family: inherit; font-style: inherit; font-size:
+ 100%; font-weight: inherit; vertical-align: baseline;
+ }
+
 body {
+  background-color: #c9ffe3;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
   background-image: url(images/background-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+}
+
+.eye {
+  width: 35px;
+  height: auto;
+}
+
+#left-eye {
+  top: 28vh;
+  left: 30%;
+  position: fixed;
+  animation-name: flip-animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#right-eye {
+  top: 28vh;
+  left: 66%;
+  position: fixed;
+  animation-name: flip-animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes flip-animation {
+    24.9% { transform: scale(1); }
+    25% { transform: scaleX(-1); }
+    74.9% { transform: scaleX(-1); }
+    75% { transform: scale(1); }
+}
+
+.gamut__timePicker__hrHand {
+  width: 1.5%;
+  height: 9vh;
+  background-image: url(images/hand.png);
+  background-size: 100% 100%;
+  position: absolute;
+  -webkit-transform-origin: 50% 95%;
+          transform-origin: 50% 95%;
+  top: 48.2vh;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  cursor: -webkit-grab;
+  cursor: grab;
+  left: 49.3%;
 }
