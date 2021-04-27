@@ -22,4 +22,4 @@ const rotateHand = (event)=>{
     document.addEventListener("mouseup", cancelRotate);
 };
 
-document.querySelector(".gamut__timePicker__hrHand").addEventListener("mousedown", rotateHand);
+document.querySelector("#hand").addEventListener("mousedown", rotateHand);
