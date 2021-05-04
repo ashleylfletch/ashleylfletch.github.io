@@ -13,6 +13,7 @@ var eight = document.getElementById("eight");
 var nine = document.getElementById("nine");
 var ten = document.getElementById("ten");
 var eleven = document.getElementById("eleven");
+  var click_eleven = true;
 var twelve = document.getElementById("twelve");
 
 one.onclick = function() {
@@ -89,9 +90,51 @@ ten.onclick = function() {
 eleven.onclick = function() {
   hand.style.transform = "rotate(330deg)";
   document.body.style.backgroundColor = "#5148b2";
+  if (click_eleven) {
+      document.getElementById("witch").style.display = "block";
+      click_eleven = false;
+    } else {
+      document.getElementById("witch").style.display = "none";
+      click_eleven = true;
+    }
 }
 
 twelve.onclick = function() {
   hand.style.transform = "rotate(0deg)";
   document.body.style.backgroundColor = "#5148b2";
+  document.getElementById("king").style.display = "none";
+  document.getElementById("queen").style.display = "none";
+  document.getElementById("egg").style.display = "none";
+  document.getElementById("witch").style.display = "none";
 }
+
+// let wind = document.getElementById("wind");
+// let number = 0;
+// let playing = false;
+// let speedValue = 1000;
+//
+// function autoPlay () {
+//   if (number < 12 && playing === true) {
+//     setTimeout(() => {
+//       number = number + 1;
+//   if (number = 1) {
+//     hand.style.transform = "rotate(30deg)";
+//     document.body.style.backgroundColor = "#e1f8ff";
+//     document.getElementById("king").style.display = "block";
+//   }
+//   if (number = 2) {
+//     hand.style.transform = "rotate(60deg)";
+//     document.body.style.backgroundColor = "#e1f8ff";
+//     document.getElementById("queen").style.display = "block";
+//   }
+//   if (number = 3) {
+//     hand.style.transform = "rotate(90deg)";
+//     document.body.style.backgroundColor = "#e1f8ff";
+//     document.getElementById("egg").style.display = "block";
+//   }
+// }
+//
+// wind.onclick = function {
+//   playing = true;
+//   autoPlay();
+// }

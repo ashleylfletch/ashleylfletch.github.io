@@ -21,8 +21,8 @@ body {
   height: 100vh;
 }
 
-#background-container {
-  background-image: url(images/background.png);
+#castle {
+  background-image: url(images/castle.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -30,6 +30,7 @@ body {
   height: 60vh;
   position: fixed;
   bottom: 0;
+  z-index: 1;
 }
 
 #clock-container {
@@ -41,7 +42,7 @@ body {
   width: 40px;
   height: 35px;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   cursor: pointer;
   margin-left: 50%;
 }
@@ -113,12 +114,12 @@ body {
   position: fixed;
   margin-left: 50%;
   left: -250px;
+  z-index: 2;
 }
 
 .eye {
   width: 50px;
   height: auto;
-  z-index: 1;
 }
 
 #left-eye {
@@ -130,6 +131,7 @@ body {
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  z-index: 3;
 }
 
 #right-eye {
@@ -141,12 +143,13 @@ body {
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  z-index: 3;
 }
 
 @keyframes flip-animation {
-    24.9% { transform: scale(1); }
+    24.99% { transform: scale(1); }
     25% { transform: scaleX(-1); }
-    74.9% { transform: scaleX(-1); }
+    74.99% { transform: scaleX(-1); }
     75% { transform: scale(1); }
 }
 
@@ -160,14 +163,14 @@ body {
   bottom: 30px;
   left: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 4;
 }
 
 #right-door {
   bottom: 30px;
   right: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 4;
 }
 
 #hand {
@@ -176,7 +179,7 @@ body {
   margin-left: 50%;
   left: -8px;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   top: 260px;
   -webkit-transform-origin: 50% 95%;
           transform-origin: 50% 95%;
@@ -186,9 +189,8 @@ body {
 
 #animation-container {
   width: 100%;
-  bottom: 20px;
   position: absolute;
-  height: 25vh;
+  height: 100vh;
 }
 
 .animation {
@@ -202,6 +204,8 @@ body {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   position: fixed;
+  bottom: 25px;
+  z-index: 3;
 }
 
 @keyframes king-animation {
@@ -214,12 +218,15 @@ body {
   animation-name: queen-animation;
   animation-duration: 20s;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
   position: fixed;
+  bottom: 25px;
+  z-index: 3;
 }
 
 @keyframes queen-animation {
   from { transform: translateX(100vw); }
-  to { transform: translateX(0vw); }
+  to { transform: translateX(-50px); }
 }
 
 #egg {
@@ -227,12 +234,31 @@ body {
   animation-name: egg-animation;
   animation-duration: 40s;
   animation-iteration-count: infinite;
+  animation-timing-function: linear;
   position: fixed;
+  bottom: 25px;
+  z-index: 3;
 }
 
 @keyframes egg-animation {
-  from { transform: translateX(0vw); }
+  from { transform: translateX(-50px); }
   to { transform: translateX(100vw); }
+}
+
+#witch {
+  display: none;
+  animation-name: witch-animation;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: fixed;
+  bottom: 55vh;
+  z-index: 0;
+}
+
+@keyframes witch-animation {
+  from { transform: translateX(100vw); }
+  to { transform: translateX(-150px); }
 }
 
 
@@ -242,8 +268,20 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 50px;
+  height: 17vh;
   position: fixed;
-  top: 90vh;
-  z-index: 2;
+  bottom: -6vh;
+  z-index: 5;
+}
+
+#wind {
+  width: 95px;
+  height: 75px;
+  transform: rotate(-35deg);
+  position: fixed;
+  z-index: 1;
+  cursor: pointer;
+  margin-left: 50%;
+  left: -185px;
+  top: 20px;
 }
