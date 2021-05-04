@@ -122,28 +122,36 @@ body {
   height: auto;
 }
 
-#left-eye {
+#left-eye-container {
   top: 105px;
   margin-left: 50%;
   left: -125px;
   position: fixed;
-  animation-name: flip-animation;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
   z-index: 3;
 }
 
-#right-eye {
+#right-eye-container {
   top: 105px;
   margin-left: 50%;
   left: 70px;
   position: fixed;
+  z-index: 3;
+}
+
+#left-eye {
+  display: block;
   animation-name: flip-animation;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  z-index: 3;
+}
+
+#right-eye {
+  display: block;
+  animation-name: flip-animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 @keyframes flip-animation {
@@ -151,6 +159,14 @@ body {
     25% { transform: scaleX(-1); }
     74.99% { transform: scaleX(-1); }
     75% { transform: scale(1); }
+}
+
+#left-eye-closed {
+  display: none;
+}
+
+#right-eye-closed {
+  display: none;
 }
 
 .door {
@@ -185,6 +201,30 @@ body {
           transform-origin: 50% 95%;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
+}
+
+#grass-container {
+  background-image: url(images/grass.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 17vh;
+  position: fixed;
+  bottom: -6vh;
+  z-index: 5;
+}
+
+#wind {
+  width: 95px;
+  height: 75px;
+  transform: rotate(-35deg);
+  position: fixed;
+  z-index: 1;
+  cursor: pointer;
+  margin-left: 50%;
+  left: -185px;
+  top: 20px;
 }
 
 #animation-container {
@@ -245,6 +285,89 @@ body {
   to { transform: translateX(100vw); }
 }
 
+#bunny {
+  display: none;
+  animation: bunny-animation 1s alternate infinite;
+  position: fixed;
+  bottom: 55vh;
+  z-index: 0;
+  left: 60px;
+}
+
+@keyframes bunny-animation {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100px); }
+}
+
+#snail {
+  display: none;
+  animation-name: snail-animation;
+  animation-duration: 200s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: fixed;
+  bottom: 20px;
+  z-index: 5;
+}
+
+@keyframes snail-animation {
+  from { transform: translateX(-150px); }
+  to { transform: translateX(100vw); }
+}
+
+#cloud1 {
+  display: none;
+  animation-name: cloud1-animation;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: fixed;
+  width: 200px;
+  bottom: 70vh;
+  z-index: -1;
+}
+
+@keyframes cloud1-animation {
+  from { transform: translateX(100vw); }
+  to { transform: translateX(-100px); }
+}
+
+#cloud2 {
+  display: none;
+  animation-name: cloud2-animation;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: fixed;
+  width: 200px;
+  bottom: 75vh;
+  z-index: -1;
+}
+
+@keyframes cloud2-animation {
+  from { transform: translateX(-200px); }
+  to { transform: translateX(100vw); }
+}
+
+#cloud3 {
+  display: none;
+  animation-name: cloud3-animation;
+  animation-duration: 80s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: fixed;
+  transform: scale(-1, -1);
+  width: 200px;
+  bottom: 65vh;
+  z-index: -1;
+}
+
+@keyframes cloud3-animation {
+  from { transform: translateX(-1000px); }
+  to { transform: translateX(100vw); }
+}
+
+
 #witch {
   display: none;
   animation-name: witch-animation;
@@ -261,27 +384,86 @@ body {
   to { transform: translateX(-150px); }
 }
 
-
-#grass-container {
-  background-image: url(images/grass.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 17vh;
+#star1 {
+  display: none;
+  animation-name: star-animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
   position: fixed;
-  bottom: -6vh;
-  z-index: 5;
+  width: 100px;
+  top: 10vh;
+  left: 3vw;
+  z-index: -2;
 }
 
-#wind {
-  width: 95px;
-  height: 75px;
-  transform: rotate(-35deg);
+#star2 {
+  display: none;
+  animation-name: star-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
   position: fixed;
-  z-index: 1;
-  cursor: pointer;
-  margin-left: 50%;
-  left: -185px;
-  top: 20px;
+  width: 100px;
+  top: 2vh;
+  right: 3vw;
+  z-index: -2;
+}
+
+#star3 {
+  display: none;
+  animation-name: star-animation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: fixed;
+  width: 100px;
+  top: 15vh;
+  right: 15vw;
+  z-index: -2;
+}
+
+#star4 {
+  display: none;
+  animation-name: star-animation;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: fixed;
+  width: 100px;
+  top: 23vh;
+  left: 20vw;
+  z-index: -2;
+}
+
+#star5 {
+  display: none;
+  animation-name: star-animation;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: fixed;
+  width: 100px;
+  top: 2vh;
+  left: 18vw;
+  z-index: -2;
+}
+
+#star6 {
+  display: none;
+  animation-name: star-animation;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: fixed;
+  width: 100px;
+  top: 1vh;
+  right: 28vw;
+  z-index: -2;
+}
+
+@keyframes star-animation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
 }
