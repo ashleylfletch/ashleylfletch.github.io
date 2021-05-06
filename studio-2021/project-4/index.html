@@ -3,11 +3,13 @@
   <head>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Project 4</title>
+    <title>Clock World</title>
   </head>
 <body>
   <div id="container">
     <div id="castle">
+    </div>
+    <div id="castle-inside">
     </div>
     <div id="clock-container">
       <div id="one" class="time-click"></div>
@@ -23,7 +25,8 @@
       <div id="eleven" class="time-click"></div>
       <div id="twelve" class="time-click"></div>
       <img src="images/hand.png" id="hand">
-      <img src="images/clock.png" id="clock">
+      <img src="images/clock.png" class="clock">
+      <img src="images/about.png" id="about" class="clock">
     </div>
     <div id="left-eye-container">
       <img src="images/eye.png" id="left-eye" class="eye">
@@ -34,12 +37,16 @@
       <img src="images/eye-closed.png" id="right-eye-closed" class="eye">
     </div>
     <div id="left-door">
-      <img src ="images/door.png" class="door">
+      <img src ="images/door.png" id="door-outside1" class="door">
+      <img src ="images/door-inside.png" id="door-inside1" class="door">
     </div>
     <div id="right-door">
-      <img src ="images/door.png" class="door">
+      <img src ="images/door.png" id="door-outside2" class="door">
+      <img src ="images/door-inside.png" id="door-inside2" class="door">
     </div>
-    <div id="wind">
+    <div id="wind-show" onclick="showAbout()">
+    </div>
+    <div id="wind-hide" onclick="hideAbout()">
     </div>
     <div id="grass-container">
     </div>
@@ -48,12 +55,18 @@
   <div id="animation-container">
     <img src="images/king.png" id="king" class="animation">
     <img src="images/queen.png" id="queen" class="animation">
-    <img src="images/egg.png" id="egg" class="animation">
+    <img src="images/princess.png" id="princess" class="animation">
     <img src="images/bunny.png" id="bunny" class="animation">
-    <img src="images/snail.png" id="snail" class="animation">
+    <img src="images/mushroom.png" id="mushroom1" class="animation">
+      <img src="images/mushroom.png" id="mushroom2" class="animation">
+      <img src="images/mushroom.png" id="mushroom3" class="animation">
+      <img src="images/mushroom.png" id="mushroom4" class="animation">
+      <img src="images/mushroom.png" id="mushroom5" class="animation">
     <img src="images/cloud1.png" id="cloud1">
       <img src="images/cloud2.png" id="cloud2">
       <img src="images/cloud1.png" id="cloud3">
+    <img src="images/egg.png" id="egg" class="animation">
+    <img src="images/snail.png" id="snail" class="animation">
     <img src="images/witch.png" id="witch" class="animation">
     <img src="images/star.png" id="star1" class="animation">
       <img src="images/star.png" id="star2" class="animation">
@@ -61,6 +74,18 @@
       <img src="images/star.png" id="star4" class="animation">
       <img src="images/star.png" id="star5" class="animation">
       <img src="images/star.png" id="star6" class="animation">
+    <img src="images/zzz.png" id="zzz" class="animation">
+
+    <img src="images/king.png" id="king-inside" class="inside-animation">
+    <img src="images/queen.png" id="queen-inside" class="inside-animation">
+    <img src="images/princess.png" id="princess-inside" class="inside-animation">
+    <img src="images/bunny.png" id="bunny-inside" class="inside-animation">
+    <img src="images/mushroom.png" id="mushroom-inside" class="inside-animation">
+    <img src="images/cloud1.png" id="cloud-inside" class="inside-animation">
+    <img src="images/egg.png" id="egg-inside" class="inside-animation">
+    <img src="images/snail.png" id="snail-inside" class="inside-animation">
+    <img src="images/witch.png" id="witch-inside" class="inside-animation">
+    <img src="images/star.png" id="star-inside" class="inside-animation">
   </div>
 
   <script src="script.js"></script>
