@@ -252,7 +252,7 @@ body {
   cursor: pointer;
   margin-left: 50%;
   left: -185px;
-  top: 20px;
+  bottom: 525px;
   z-index: 3;
 }
 
@@ -265,7 +265,7 @@ body {
   cursor: pointer;
   margin-left: 50%;
   left: -185px;
-  top: 20px;
+  bottom: 525px;
   z-index: 3;
   display: none;
 }
@@ -746,5 +746,64 @@ body {
   #right-eye-container {
     bottom: 232.5px;
     left: 35px;
+  }
+  #wind-show {
+    width: 47.5px;
+    height: 37.5px;
+    left: -92.5px;
+    bottom: 262.5px;
+  }
+  #wind-hide {
+    width: 47.5px;
+    height: 37.5px;
+    left: -92.5px;
+    bottom: 262.5px;
+    display: none;
+  }
+  #king {
+    bottom: 12.5px;
+  }
+  @keyframes king-animation {
+    from { transform: translateX(5px); }
+    to { transform: translateX(calc(100vw - 80px)); }
+  }
+  #queen {
+    bottom: 12.5px;
+  }
+  @keyframes queen-animation {
+  from { transform: translateX(calc(100vw - 80px)); }
+  to { transform: translateX(5px); }
+  }
+  #princess {
+    bottom: 12.5px;
+  }
+  @keyframes princess-animation {
+    from { transform: translateX(5px); }
+    to { transform: translateX(calc(100vw - 80px)); }
+  }
+  #mushroom1 {
+    bottom: 2.5vh;
+    width: 50px;
+  }
+  #mushroom2 {
+    bottom: 2.5vh;
+    width: 50px;
+  }
+  #mushroom3 {
+    bottom: 2.5vh;
+    width: 50px;
+  }
+  #mushroom4 {
+    bottom: -0.5vh;
+  }
+  #mushroom5 {
+    bottom: -0.5vh;
+  }
+  #snail {
+    bottom: 10px;
+  }
+  @keyframes snail-animation {
+    from { transform: translateX(-75px); }
+    to { transform: translateX(100vw); }
   }
 }
