@@ -147,7 +147,9 @@ twelve.onclick = function() {
 }
 
 function showAbout () {
-    document.getElementById("about").style.display = "block";
+    document.body.style.backgroundColor = "#ffffff";
+    document.getElementById("title").style.display = "block";
+    document.getElementById("clock-inside").style.display = "block";
     document.getElementById("castle-inside").style.display = "block";
     document.getElementById("grass-container").style.display = "none";
     document.getElementById("hand").style.display = "none";
@@ -198,7 +200,9 @@ function showAbout () {
 }
 
 function hideAbout () {
-    document.getElementById("about").style.display = "none";
+    document.body.style.backgroundColor = "#e1f8ff";
+    document.getElementById("title").style.display = "none";
+    document.getElementById("clock-inside").style.display = "none";
     document.getElementById("castle-inside").style.display = "none";
     document.getElementById("grass-container").style.display = "block";
     document.getElementById("hand").style.display = "block";

@@ -65,62 +65,74 @@ body {
 #one {
   left: 40px;
   bottom: 370px;
+  pointer-events: auto;
 }
 
 #two {
   left: 85px;
   bottom: 330px;
+  pointer-events: auto;
 }
 
 #three {
   left: 100px;
   bottom: 270px;
+  pointer-events: auto;
 }
 
 #four {
   left: 85px;
   bottom: 210px;
+  pointer-events: auto;
 }
 
 #five {
   left: 40px;
   bottom: 165px;
+  pointer-events: auto;
 }
 
 #six {
   left: -20px;
   bottom: 150px;
+  pointer-events: auto;
 }
 
 #seven {
   left: -80px;
   bottom: 165px;
+  pointer-events: auto;
 }
 
 #eight {
   left: -125px;
   bottom: 200px;
   height: 50px;
+  pointer-events: auto;
 }
 
 #nine {
   left: -140px;
   bottom: 270px;
+  pointer-events: auto;
 }
 
 #ten {
   left: -125px;
   bottom: 330px;
+  pointer-events: auto;
 }
 
 #eleven {
   left: -80px;
   bottom: 370px;
+  pointer-events: auto;
 }
 
 #twelve {
   left: -20px;
   bottom: 390px;
+  pointer-events: auto;
 }
 
 .clock {
@@ -132,7 +144,7 @@ body {
   z-index: 2;
 }
 
-#about {
+#clock-inside {
   display: none;
 }
 
@@ -288,8 +300,8 @@ body {
   animation-timing-function: linear;
   position: fixed;
   bottom: 25px;
-  padding: 10px;
   z-index: 3;
+  pointer-events: none;
 }
 
 @keyframes king-animation {
@@ -306,6 +318,7 @@ body {
   position: fixed;
   bottom: 25px;
   z-index: 3;
+  pointer-events: none;
 }
 
 @keyframes queen-animation {
@@ -322,6 +335,7 @@ body {
   position: fixed;
   bottom: 25px;
   z-index: 3;
+  pointer-events: none;
 }
 
 @keyframes princess-animation {
@@ -338,6 +352,7 @@ body {
   position: fixed;
   bottom: 55vh;
   z-index: 3;
+  pointer-events: none;
 }
 
 @keyframes egg-animation {
@@ -355,6 +370,7 @@ body {
   bottom: 55vh;
   z-index: 0;
   right: 15%;
+  pointer-events: none;
 }
 
 @keyframes bunny-animation {
@@ -369,6 +385,7 @@ body {
   left: 16%;
   z-index: 4;
   width: 100px;
+  pointer-events: none;
 }
 
 #mushroom2 {
@@ -379,6 +396,7 @@ body {
   z-index: 4;
   transform: scale(-1, 1);
   width: 100px;
+  pointer-events: none;
 }
 
 #mushroom3 {
@@ -388,6 +406,7 @@ body {
   left: 70%;
   z-index: 4;
   width: 100px;
+  pointer-events: none;
 }
 
 #mushroom4 {
@@ -397,6 +416,7 @@ body {
   left: 85%;
   z-index: 6;
   transform: scale(-1, 1);
+  pointer-events: none;
 }
 
 #mushroom5 {
@@ -405,6 +425,7 @@ body {
   bottom: -1vh;
   left: 2%;
   z-index: 6;
+  pointer-events: none;
 }
 
 #cloud1 {
@@ -417,6 +438,7 @@ body {
   width: 200px;
   bottom: 60vh;
   z-index: -1;
+  pointer-events: none;
 }
 
 @keyframes cloud1-animation {
@@ -434,6 +456,7 @@ body {
   width: 200px;
   bottom: 80vh;
   z-index: -1;
+  pointer-events: none;
 }
 
 @keyframes cloud2-animation {
@@ -452,6 +475,7 @@ body {
   width: 200px;
   bottom: 65vh;
   z-index: -1;
+  pointer-events: none;
 }
 
 @keyframes cloud3-animation {
@@ -468,6 +492,7 @@ body {
   position: fixed;
   bottom: 20px;
   z-index: 5;
+  pointer-events: none;
 }
 
 @keyframes snail-animation {
@@ -484,6 +509,7 @@ body {
   position: fixed;
   bottom: 65vh;
   z-index: 0;
+  pointer-events: none;
 }
 
 @keyframes witch-animation {
@@ -502,6 +528,7 @@ body {
   top: 10vh;
   left: 3vw;
   z-index: -2;
+  pointer-events: none;
 }
 
 #star2 {
@@ -515,6 +542,7 @@ body {
   top: 2vh;
   right: 3vw;
   z-index: -2;
+  pointer-events: none;
 }
 
 #star3 {
@@ -528,6 +556,7 @@ body {
   top: 15vh;
   right: 15vw;
   z-index: -2;
+  pointer-events: none;
 }
 
 #star4 {
@@ -541,6 +570,7 @@ body {
   top: 23vh;
   left: 20vw;
   z-index: -2;
+  pointer-events: none;
 }
 
 #star5 {
@@ -554,6 +584,7 @@ body {
   top: 2vh;
   left: 18vw;
   z-index: -2;
+  pointer-events: none;
 }
 
 #star6 {
@@ -567,6 +598,7 @@ body {
   top: 1vh;
   right: 28vw;
   z-index: -2;
+  pointer-events: none;
 }
 
 @keyframes star-animation {
@@ -578,10 +610,12 @@ body {
 #zzz {
   position: fixed;
   width: 150px;
-  top: 2vh;
-  right: 18vw;
+  margin-left: 50%;
+  bottom: 470px;
+  left: 230px;
   z-index: -2;
   display: none;
+  pointer-events: none;
 }
 
 .inside-animation {
@@ -599,56 +633,84 @@ body {
 #king-inside {
   animation-delay: -40s;
   display: none;
+  pointer-events: none;
 }
 
 #queen-inside {
   animation-delay: -36s;
   display: none;
+  pointer-events: none;
 }
 
 #princess-inside {
   animation-delay: -28s;
   display: none;
+  pointer-events: none;
 }
 
 #bunny-inside {
   animation-delay: -24s;
   display: none;
+  pointer-events: none;
 }
 
 #mushroom-inside {
   animation-delay: -20s;
   display: none;
+  pointer-events: none;
 }
 
 #cloud-inside {
   animation-delay: -16s;
   display: none;
+  pointer-events: none;
 }
 
 #egg-inside {
   animation-delay: -12s;
   display: none;
+  pointer-events: none;
 }
 
 #snail-inside {
   animation-delay: -8s;
   display: none;
+  pointer-events: none;
 }
 
 #witch-inside {
   animation-delay: -4s;
   display: none;
+  pointer-events: none;
 }
 
 #star-inside {
   animation-delay: 0s;
   display: none;
+  pointer-events: none;
 }
 
 @keyframes inside-animation {
   from { transform: translateX(0); }
   to { transform: translateX(calc(100vw + 150px)); }
+}
+
+#title {
+  width: 250px;
+  margin-left: 50%;
+  left: -550px;
+  top: -150px;
+  position: fixed;
+  animation-name: title-animation;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  display: none;
+}
+
+@keyframes title-animation {
+  from { top: -350px }
+  to { top: -150px }
 }
 
 @media (max-width: 480px) {
@@ -805,5 +867,64 @@ body {
   @keyframes snail-animation {
     from { transform: translateX(-75px); }
     to { transform: translateX(100vw); }
+  }
+  #zzz {
+    width: 75px;
+    bottom: 235px;
+    left: 110px;
+    z-index: 1;
+  }
+  .inside-animation {
+    width: 75px;;
+    bottom: -2.5px;
+    left: -75px;
+  }
+  #title {
+    width: 125px;
+    left: -62.5px;
+    top: -75px;
+  }
+  @keyframes title-animation {
+    from { top: -175px }
+    to { top: -75px }
+  }
+  #star1 {
+    width: 50px;
+  }
+  #star2 {
+    width: 50px;
+  }
+  #star3 {
+    width: 50px;
+  }
+  #star4 {
+    width: 50px;
+  }
+  #star5 {
+    width: 50px;
+  }
+  #star6 {
+    width: 50px;
+  }
+  #cloud1 {
+    width: 100px;
+  }
+  @keyframes cloud1-animation {
+    from { transform: translateX(100vw); }
+    to { transform: translateX(-200px); }
+  }
+  #cloud2 {
+    width: 100px;
+  }
+  @keyframes cloud2-animation {
+    from { transform: translateX(-100px); }
+    to { transform: translateX(50vw); }
+  }
+  #cloud3 {
+    width: 100px;
+  }
+  @keyframes cloud3-animation {
+    from { transform: translateX(-300px); }
+    to { transform: translateX(50vw); }
   }
 }
