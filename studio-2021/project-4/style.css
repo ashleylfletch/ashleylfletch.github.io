@@ -698,7 +698,7 @@ body {
 #title {
   width: 250px;
   margin-left: 50%;
-  left: -550px;
+  left: -500px;
   top: -150px;
   position: fixed;
   animation-name: title-animation;
