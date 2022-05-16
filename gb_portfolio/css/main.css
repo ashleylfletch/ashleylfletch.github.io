@@ -1,0 +1,65 @@
+h1 {
+  font-family: serif;
+  font-size: 20pt;
+  line-height: 22pt;
+  color: #50C878;
+}
+
+h2 {
+  font-family: serif;
+  font-size: 18pt;
+  line-height: 20pt;
+}
+
+h3 {
+  font-family: serif;
+  font-size: 12pt;
+}
+
+a {
+  color: pink;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  color: lightpink;
+}
+
+p {
+  font-family: eaves, serif;
+  padding-left: 15px;
+  margin-bottom: 50px;
+  font-size: 15pt;
+  line-height: 17pt;
+}
+
+#topleft {
+  position: fixed;
+  top: 5px;
+  left: 50px;
+  z-index: 5;
+}
+
+#topright {
+  position: fixed;
+  top: 5px;
+  right: 50px;
+  z-index: 5;
+}
+
+#main {
+  position: relative;
+  padding: 15%;
+  padding-top: 120px;
+}
+
+video {
+  width: 75%;
+}
+
+img {
+  width: 50%;
+}
