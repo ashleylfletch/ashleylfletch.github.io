@@ -25,7 +25,7 @@ a:visited {
 }
 
 a:hover {
-  color: lightpink;
+  color: yellow;
 }
 
 p {
@@ -57,7 +57,7 @@ p {
 }
 
 video {
-  width: 75%;
+  width: 100%;
 }
 
 img {
